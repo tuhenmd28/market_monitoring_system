@@ -1,0 +1,13 @@
+
+1. due_collection
+    collect due
+2. due_list
+     total due list
+
+     due = total_due_list = collect_due
+
+3. advance collection
+    collect advance
+4. Advance list
+
+    advance = total_advance_collection - advence_list

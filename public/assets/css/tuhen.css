@@ -1,0 +1,373 @@
+.tagLine {
+    position: absolute;
+    width: 12em;
+    top: 1.8em;
+    right: -3em;
+    background: #f16334;
+    color: #fff;
+    padding: 0.22em 0;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 700;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.packageBox .btn-group {
+    flex-wrap: nowrap;
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+}
+.red-light {
+    background-color: lightcoral;
+}
+
+.red-normal {
+    background-color: red;
+}
+
+.red-dark {
+    background-color: darkred;
+}
+
+/* Blue Shades */
+.blue-light {
+    background-color: lightblue;
+}
+
+.blue-normal {
+    background-color: blue;
+}
+
+.blue-dark {
+    background-color: darkblue;
+}
+
+/* Green Shades */
+.green-light {
+    background-color: lightgreen;
+}
+
+.green-normal {
+    background-color: green;
+}
+
+.green-dark {
+    background-color: darkgreen;
+}
+
+/* Yellow Shades */
+.yellow-light {
+    background-color: lightyellow;
+}
+
+.yellow-normal {
+    background-color: yellow;
+}
+
+.yellow-dark {
+    background-color: darkkhaki;
+}
+
+/* Purple Shades */
+.purple-light {
+    background-color: lavender;
+}
+
+.purple-normal {
+    background-color: purple;
+}
+
+.purple-dark {
+    background-color: darkorchid;
+}
+
+.red {
+    background: red;
+}
+.bgSilver {
+    background: silver;
+}
+.bgMagenta {
+    background: magenta;
+}
+.bgWhite {
+    background: white;
+}
+.bgOrange {
+    background: orange;
+}
+.bgPurple {
+    background: purple;
+}
+.bgGray {
+    background: gray;
+}
+.bgYellow {
+    background: yellow;
+}
+.bgPink{
+    background: pink;
+}
+.bgRed {
+    background: red;
+}
+.bgGreen {
+    background: green;
+}
+.bgDeepGreen {
+    background: #183a1d;
+}
+.bgLightGreen {
+    background: #c7e8ca;
+}
+.bgBlue {
+    background: #3c8dbc;
+}
+.active .card {
+    background: #3c8dbc;
+    background: #27a7149c;
+}
+input.packageId {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+}
+.text-red {
+    color: #dc0441 !important;
+}
+
+.orderTable tr td,
+th {
+    padding: 10px;
+    /* border-bottom:1px solid #00000040; */
+}
+.borderDash {
+    border-bottom: 1px dashed #333333;
+}
+/* img{
+    width:100%;
+} */
+.position-relative {
+    position: relative !important;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(196, 205, 224, 0.2);
+    border-radius: 13px;
+    padding: 15px;
+    /* height: 100%; */
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.w-100 {
+    width: 100% !important;
+}
+.p-3 {
+    padding: 1.3rem;
+}
+.row.align-items-center p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f16334;
+}
+.btn-group .btn {
+    border: 1px solid #00000036;
+    color: #f16334;
+    background: #fff;
+    font-size: 16px;
+    outline: 0 !important;
+}
+.row.align-items-center {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    justify-content: center;
+    margin-left: 0px;
+    margin-bottom: 14px;
+}
+iframe {
+    width: 100%;
+    /* height: auto; */
+    aspect-ratio: 16/9;
+}
+.packageImg {
+    width: 100%;
+    padding: 10px;
+}
+.py-0 {
+    padding-block: 0px;
+}
+.px-0 {
+    padding-block: 0px;
+}
+.py-10 {
+    padding-block: 10px;
+}
+.px-10 {
+    padding-block: 10px;
+}
+.py-15 {
+    padding-block: 15px;
+}
+.px-15 {
+    padding-block: 15px;
+}
+.py-15 {
+    padding-block: 15px;
+}
+.px-15 {
+    padding-block: 15px;
+}
+.my-0 {
+    margin-block: 0px;
+}
+.mx-0 {
+    margin-block: 0px;
+}
+.my-10 {
+    margin-block: 10px;
+}
+.mx-10 {
+    margin-block: 10px;
+}
+.my-15 {
+    margin-block: 15px;
+}
+.mx-15 {
+    margin-block: 15px;
+}
+.my-15 {
+    margin-block: 15px;
+}
+.mx-15 {
+    margin-block: 15px;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.buttonDesign {
+    /* background: green;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0px 12px #00000020;
+    display: inline-block;
+    margin: 20px 0; */
+    font-family: "Roboto", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #008037;
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    border-color: #ffffff;
+    border-radius: 63px 63px 63px 63px;
+    box-shadow: 2px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    padding: 25px 50px 25px 50px;
+}
+
+.accordion-button::after {
+    display: none;
+}
+.accordion-button::before {
+    border-left: 16px solid white;
+    position: absolute;
+    content: "";
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    transition: all 0.3s;
+}
+.accordion {
+    padding: 5px 10px;
+}
+body:has(.shadow_class){
+    background:#f5f5f5;
+}
+.container:has(.shadow_class) {
+    width: 95% !important;
+    min-width: 94%;
+    margin: auto;
+    padding: 0 3%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    background:#fff;
+}
+/*
+ .accordion-button::before {
+
+}
+.accordion-button:not(.collapsed)::before {
+    transform: rotate(90deg);
+    bottom: 14px;
+}
+ */
+.accordion-header:has(+ div.show) .accordion-button::before {
+    transform: rotate(90deg);
+    left: 0;
+    bottom: 14px;
+}
+.accordion-header:has(+ div:not(.show)) .accordion-button::before {
+    /* content: ''; */
+    /* border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent; */
+    /* position: absolute; */
+    left: 0;
+}
+div.col-sm-12:has(.main-content-bg-green) .accordion-button {
+    color: #fff;
+}
+div.col-sm-12:has(.main-content-bg-green) {
+    background: #408438;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.accordion-item {
+    background-color: #fff0;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.accordion-button {
+    background: transparent;
+    /* color: #fff; */
+}
+.accordion-body {
+    /* color: white; */
+}
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff00;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    /* color: #ffffff; */
+}
+
+.text-orage {
+    color: #ffa102;
+}

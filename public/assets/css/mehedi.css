@@ -1,0 +1,336 @@
+:root{
+    --primaryColor:#3e8ef7;
+    --btnBgColor:#e4eaec;
+    --btnHover:#f3f7f9;
+    --btnHoverText:#76838f;
+    --btnColor:#212529;
+     --bs-gutter-x: 0rem;
+}
+
+/* #tabs-style3 .tabs-menu{} */
+ .tabs-menu  label input{
+    opacity:0;
+    display:none;
+}
+ .tabs-menu  a:hover{
+    background:var(--btnHover);
+    color:var(--btnHoverText);
+    border-radius:2px;
+}
+ .tabs-menu  label.active{
+    background:var(--primaryColor);
+    color:#fff;
+    border-radius:2px !important;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+ .tabs-menu  label{
+    margin:0;
+    position:relative;
+    border:1px solid #fff;
+    background:var(--btnBgColor);
+    color:var(--btnColor);
+    padding:6.4px 14px ;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+
+}
+.profile_box i{
+    cursor:pointer;
+}
+.profile_box li{
+    border:none !important;
+}
+.profile_box:has(>li) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #dae9ff;
+    width: 220px;
+    padding-right: 5px;
+    transition:0.5s all;
+}
+.profile_box:hover {
+    background: #cbd1d3;
+}
+.profile_box {
+    display: none;
+}
+ul#user_list:has(>li)  {
+    display:block;
+}
+ul#user_list {
+    display: none;
+    position: absolute;
+    left: 12px;
+    top: 100%;
+    width: calc(100% - 24px);
+    background-color: #fff;
+    border: 1px solid #eee;
+    max-height: 265px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.profile_box li,
+ul#user_list li {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    gap:14px;
+}
+ul#user_list li:hover {
+   background:#f2f8ff;
+}
+.profile_box li .name_id,
+ul#user_list li .name_id {
+    flex:1;
+}
+.profile_box li .name_id p:first-child,
+ul#user_list li .name_id p:first-child{
+    margin:0;
+}
+.profile_box .name_id p:last-child,
+ul#user_list li .name_id p:last-child{
+    margin:0;
+}
+.profile_box li .img ,
+ul#user_list li .img {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    white-space: nowrap;
+    vertical-align: bottom;
+    border-radius: 1000px;
+}
+.profile_box li{
+    flex:1;
+}
+.profile_box li .img img,
+ul#user_list li .img img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 0 none;
+    border-radius: 1000px;
+}
+.input-group-prepend>.input-group-text{
+    border:1px solid #d8dbee;
+    border-radius: 0 5px 5px 0 !important;
+}
+.richText .richText-editor {
+    padding: 10px;
+    border-left: 0 !important;
+}
+
+#date {
+    gap: 10px;
+}
+
+#date .left {}
+
+#date .left >div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+}
+#date .left >div:nth-child(1) .top {
+    color: white;
+    background-color: #000000!important;
+    border-radius: 5px 5px 0 0;
+    padding: 1px 9px;
+    font-size: 12px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#date .left >div:nth-child(1) .mid {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #e4eaec!important;
+    color: black;
+    font-weight: 900;
+}
+#date .left >div:nth-child(1) .bottom {
+    font-size: 9px;
+    border-bottom: 1px transparent;
+    border-radius: 0 0 5px 5px;
+    padding-top: 2px;
+    background-color: #e0e0e0!important;
+    width: 100%;
+    padding-bottom: 3px;
+}
+#date .left >div:nth-child(2) {}
+
+
+#date .right {}
+
+.card .card-header .card-title:before {
+    height: 30px;
+    top: 19px;
+}
+.card-header {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+}
+.card-options a:not(.btn) i {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+
+/* check bok style  */
+.richText {
+    position: relative;
+    width: 235%;
+}
+
+/* a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+    display: none;
+} */
+
+.btn-group.btn-group-toggle .btn {
+    border-color: white;
+}
+
+.btn-group.btn-group-toggle .btn.active {
+    border-color: white !important;
+    background-color: #3e8ef7 !important;
+    color: white !important;
+}
+
+.send-to>*+* {
+    margin-left: 20px;
+}
+
+
+
+.send-to>*+* {
+    margin-left: 20px;
+}
+
+.abc-checkbox {
+    cursor: default;
+    padding-left: 4px;
+}
+
+.abc-checkbox label {
+    cursor: pointer;
+    display: inline;
+    vertical-align: top;
+    position: relative;
+    padding-left: 15px;
+}
+
+.abc-checkbox label {
+    padding-left: 10px;
+    padding-top: 8px;
+    margin-right: 8px;
+}
+
+.abc-checkbox.abc-checkbox-circle label::before {
+    border-radius: 50%;
+}
+
+.abc-checkbox label::after,
+.abc-checkbox label::before {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 6px;
+}
+
+input#sendSms {
+    opacity: 0;
+}
+
+.sms-content-container {
+    position: relative;
+    width: 237%;
+}
+
+.abc-checkbox label::before {
+    cursor: pointer;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 2px;
+    left: 10px;
+    margin-left: -1.25rem;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: border .15s ease-in-out, color .15s ease-in-out;
+}
+
+.abc-checkbox input[type="checkbox"]+label::after {
+    color: rgb(211, 211, 211);
+    font-family: "Font Awesome 5 Pro", serif;
+    content: "✔";
+}
+
+.abc-checkbox label::after,
+.abc-checkbox label::before {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 6px;
+}
+
+.abc-checkbox label::after {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 15px;
+    top: 3px;
+    margin-left: -1.3rem;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 18px;
+    color: #495057;
+}
+
+.abc-checkbox input[type=checkbox]:checked+label::after {
+    color: #fff;
+}
+
+.abc-checkbox-success input[type=checkbox]:checked+label::before,
+.abc-checkbox-success input[type=radio]:checked+label::before {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+label.form-control-label.required:after {
+    content: '*';
+    color: red;
+    margin-left: 3px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    opacity: 0;
+}
+.dataTables_length{
+    float: left;
+
+}
+div#sms_table_length {
+            float: left;
+        }
+        div.dt-buttons {
+            position: relative;
+            float: right;
+        }
