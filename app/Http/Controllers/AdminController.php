@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Traits\SmsSendTrait;
 use App\Models\Party;
+use App\Models\Category;
+use App\Models\Employee;
 use App\Models\CategoryGsm;
+use App\Models\ProductType;
 use App\Models\SaleProduct;
 use App\Models\CategorySize;
 use App\Models\CategoryUnit;
@@ -12,8 +14,8 @@ use App\Models\CostCategory;
 use Illuminate\Http\Request;
 use App\Models\CategoryColor;
 use App\Models\PurchaseProduct;
+use App\Http\Traits\SmsSendTrait;
 use App\Http\Controllers\Controller;
-use App\Models\Employee;
 
 class AdminController extends Controller
 {
@@ -22,39 +24,17 @@ class AdminController extends Controller
     {
         // dd($request->all());
         switch ($request->table) {
-            case 'CategorySize':
-                $package =  CategorySize::find($request->id);
+            case 'category':
+                $package =  Category::find($request->id);
                 $package->delete();
-                $route = 'admin.category_size';
+                $route = 'admin.category.index';
                 break;
-            case 'CategoryGsm':
-                CategoryGsm::find($request->id)->delete();
-                $route = 'admin.category_gsm';
+            case 'ProductType':
+                $package =  ProductType::find($request->id);
+                $package->delete();
+                $route = 'admin.product_type.index';
                 break;
-            case 'CategoryColor':
-                $analytic = CategoryColor::find($request->id)->delete();
-                $route = 'admin.category_color';
-                break;
-            case 'CategoryUnit':
-                $analytic = CategoryUnit::find($request->id)->delete();
-                $route = 'admin.category_unit';
-                break;
-            case 'CostCategory':
-                $CostCategory = CostCategory::find($request->id)->delete();
-                $route = 'admin.cost_category.index';
-                break;
-            case 'SParty':
-                $analytic = Party::find($request->id)->delete();
-                $route = 'admin.party';
-                break;
-            case 'PParty':
-                $analytic = Party::find($request->id)->delete();
-                $route = 'admin.purchase_party';
-                break;
-            case 'SaleProduct':
-                $analytic = SaleProduct::find($request->id)->delete();
-                $route = 'admin.sale_product';
-                break;
+
             case 'employe':
                 $analytic = Employee::find($request->id)->delete();
                 $route = 'admin.employe.index';

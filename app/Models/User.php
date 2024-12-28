@@ -45,4 +45,18 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    const SUPPERADMIN = 1;
+    const ADMIN = 2;
+    const FARMER = 3;
+    const CUSTOMER = 4;
+    const EMPLOYEE = 5;
+
+    const types = [
+        self::SUPPERADMIN => 'Supper Admin',
+        self::ADMIN => 'Admin',
+        self::FARMER => 'Farmer',
+        self::CUSTOMER => 'Customer',
+        self::EMPLOYEE => 'Employee',
+    ];
 }

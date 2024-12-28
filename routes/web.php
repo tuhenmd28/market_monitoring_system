@@ -5,11 +5,14 @@ use App\Http\Controllers\SaleController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PartyController;
 use App\Http\Controllers\SalaryController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\PurchaseController;
 use App\Http\Controllers\SaleStockController;
+use App\Http\Controllers\ProductTypeController;
 use App\Http\Controllers\SaleProductController;
 use App\Http\Controllers\CostCategoryController;
 use App\Http\Controllers\DueCollectionController;
@@ -21,17 +24,31 @@ use App\Http\Controllers\DailyExpenditureController;
 use App\Http\Controllers\AdvanceCollectionController;
 use App\Http\Controllers\PartyConsiderationController;
 
-Route::get('/', function () {
-    return view('auth.login');
-})->middleware(['guest']);
+Route::get("/",[FrontendController::class,'index'])->name('index');
+Route::get("/admin_signup",[FrontendController::class,"adminSignUp"])->name('admin_signup');
+Route::get("/admin_signin",[FrontendController::class,"adminSignIn"])->name('admin_signin')->middleware(['guest']);
+Route::get("/farmer_signup",[FrontendController::class,"farmerSignUp"])->name('farmer_signup');
+Route::get("/farmer_signin",[FrontendController::class,"farmerSignIn"])->name('farmer_signin');
+
+
+Route::post("/getDistrict",[FrontendController::class,"getDistrict"])->name('getDistrict');
+Route::post("/getUpazila",[FrontendController::class,"getUpazila"])->name('getUpazila');
+Route::post("/getUnion",[FrontendController::class,"getUnion"])->name('getUnion');
+
+Route::post("/admin_signup_store",[FrontendController::class,"admin_signup_store"])->name('admin_signup_store');
+Route::post("/login_store",[FrontendController::class,"login"])->name('login_store');
+// Route::post("/farmer_signup_store",[FrontendController::class,"farmerSignUp"])->name('farmer_signup_store');
+// Route::post("/",[FrontendController::class,"farmerSignIn"])->name('farmer_signin');
+// Route::get('/', function () {
+//     return view('auth.login');
+// })->middleware(['guest']);
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin.home');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
 });
-
 
 Route::group([
     'prefix' => 'admin',
@@ -41,6 +58,9 @@ Route::group([
     Route::get('report',function(){
         return view('allreport.salary_report');
     });
+    Route::resource('category', CategoryController::class);
+    Route::resource('product', ProductController::class);
+    Route::resource('product_type', ProductTypeController::class);
     Route::get('/profile/{id}', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -75,27 +95,8 @@ Route::group([
     Route::post("category_unit/{id}",[CategoryController::class,"unitUpdate"])->name('category_unit.update');
 
 
-    Route::resource('daily_expenditure', DailyExpenditureController::class)->except(['destroy','show']);
-    Route::resource('daily_production', DailyProductionController::class)->except(['show','store']);
-    Route::post('daily_production', [DailyProductionController::class,"store"])->middleware('BlockFormSubmission')->name('daily_production.store');
-    Route::get('single-production', [DailyProductionController::class,"oneEmployeProduction"])->name('oneEmployeProduction');
-    Route::post('daily_production_report', [DailyProductionController::class,"daily_production_report"])->name('daily_production_report');
-    Route::post('salary_report', [SalaryController::class,"salary_report"])->name('salary_report');
-    Route::resource('cost_category', CostCategoryController::class)->except(['destroy','show']);
-    Route::resource('party', PartyController::class)->except(['destroy']);
-    Route::resource('purchase_party', PurchasePartyController::class)->except(['destroy']);
 
-    Route::resource('sale_product', SaleProductController::class)->except(['show','destroy']);
-    Route::get("sale_product_list",[SaleProductController::class,"productList"])->name('productList');
-    Route::post("search_product",[SaleProductController::class,"search_product"])->name('search_product');
-    Route::resource('purchase_product', PurchaseProductController::class)->except(['show','destroy']);
-    Route::resource('sale', SaleController::class)->except(['destroy']);
-    Route::resource('salary', SalaryController::class)->except(['destroy']);
-    Route::resource('purchase', PurchaseController::class)->except(['destroy']);
-    Route::resource('sale_stock', SaleStockController::class)->except(['show','destroy','update','edit']);
-    Route::get("sale_stock_adjust",[SaleStockController::class,"saleStockAdjust"])->name('saleStockAdjust');
-    Route::get("purchase_stock_adjust",[PurchaseStockController::class,"purchaseStockAdjust"])->name('purchaseStockAdjust');
-    Route::resource('purchase_stock', PurchaseStockController::class)->except(['show','destroy']);
+
     Route::resource('employe', EmployeeController::class)->except(['destroy']);
     Route::match(['get','post'],"employe-salary/{id}",[EmployeeController::class,"employe_salary"])->name('employe.employe_salary');
     Route::match(['get','post'],"employe-addvance-salary/{id}",[EmployeeController::class,"addvance_salary"])->name('employe.addvance_salary');
@@ -106,26 +107,7 @@ Route::group([
     Route::post("getSaleProductPrice",[AdminController::class,"getSaleProductPrice"])->name('getSaleProductPrice');
     Route::post("getPartyInfo",[AdminController::class,"getPartyInfo"])->name('getPartyInfo');
     Route::post("getProductName",[AdminController::class,"getProductName"])->name('getProductName');
-    Route::post("addItem",[PurchaseController::class,"addItem"])->name('addItem');
-    Route::post("removeItem",[PurchaseController::class,"removeItem"])->name('removeItem');
-    Route::post("qtyChange",[PurchaseController::class,"qtyChange"])->name('qtyChange');
-    Route::get("sale/print/{id}",[SaleController::class,"print"])->name('sale.print');
-    Route::post("saleAddItem",[SaleController::class,"addItem"])->name('saleAddItem');
-    Route::post("saleRemoveItem",[SaleController::class,"removeItem"])->name('saleRemoveItem');
-    Route::post("saleQtyChange",[SaleController::class,"qtyChange"])->name('saleQtyChange');
-    Route::post("saleStockAddItem",[SaleStockController::class,"addItem"])->name('saleStockAddItem');
-    Route::post("saleStockRemoveItem",[SaleStockController::class,"removeItem"])->name('saleStockRemoveItem');
-    Route::post("saleStockQtyChange",[SaleStockController::class,"qtyChange"])->name('saleStockQtyChange');
-    Route::post("purchaseStockAddItem",[PurchaseStockController::class,"addItem"])->name('purchaseStockAddItem');
-    Route::post("purchaseStockRemoveItem",[PurchaseStockController::class,"removeItem"])->name('purchaseStockRemoveItem');
-    Route::post("purchaseStockQtyChange",[PurchaseStockController::class,"qtyChange"])->name('purchaseStockQtyChange');
-    Route::post("adjustStockAddItem",[PurchaseStockController::class,"addItemAdjust"])->name('adjustStockAddItem');
-    Route::post("adjustStockRemoveItem",[PurchaseStockController::class,"removeItemAdjust"])->name('adjustStockRemoveItem');
-    Route::post("adjustStockQtyChange",[PurchaseStockController::class,"qtyChangeAdjust"])->name('adjustStockQtyChange');
-    Route::get("subtract_stock",[PurchaseStockController::class,"purchaseStockAdjustMultiple"])->name('purchaseStockAdjustMultiple');
-    Route::resource("due_collection",DueCollectionController::class);
-    Route::resource("advance_collection",AdvanceCollectionController::class);
-    Route::resource("consideration",PartyConsiderationController::class);
+
 
 });
 

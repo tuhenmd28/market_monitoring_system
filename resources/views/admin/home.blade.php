@@ -33,10 +33,10 @@
                                     <div class="row">
                                         <div class="col-9">
                                             <div class="mt-0 text-start">
-                                                <a href="{{ route('admin.sale.create') }}">
+                                                <a href="#">
                                                     <span class="fs-16 font-weight-semibold">Today Sale</span>
                                                 </a>
-                                                <h3 class="mb-0 mt-1 text-primary fs-25">{{ todaySale() }} ৳</h3>
+                                                <h3 class="mb-0 mt-1 text-primary fs-25"></h3>
                                             </div>
                                         </div>
                                         <div class="col-3">
@@ -57,7 +57,7 @@
                                         <div class="col-9">
                                             <div class="mt-0 text-start">
                                                 <span class="fs-16 font-weight-semibold">Monthly Sale</span>
-                                                <h3 class="mb-0 mt-1 text-secondary fs-25">{{ currentMonthSale() }} ৳</h3>
+                                                <h3 class="mb-0 mt-1 text-secondary fs-25"></h3>
                                             </div>
                                         </div>
                                         <div class="col-3">
@@ -78,10 +78,10 @@
                                     <div class="row">
                                         <div class="col-9">
                                             <div class="mt-0 text-start">
-                                                <a href="{{ route('admin.daily_production.create') }}">
+                                                <a href="">
                                                     <span class="fs-16 font-weight-semibold">Today Production</span>
                                                 </a>
-                                                <h3 class="mb-0 mt-1 text-secondary fs-25">{{ todayProduction() }} ৳</h3>
+                                                <h3 class="mb-0 mt-1 text-secondary fs-25"></h3>
                                             </div>
                                         </div>
                                         <div class="col-3">
@@ -94,187 +94,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="mt-0 text-start">
-                                                <span class="fs-16 font-weight-semibold">Today Profit</span>
-                                                <h3 class="mb-0 mt-1 text-secondary fs-25">{{ todayProfit() }} ৳</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon1  my-auto  float-end">
-                                                {{-- <i    class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/profit.png') }}" alt="">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="mt-0 text-start">
-                                                <span class="fs-16 font-weight-semibold">Monthly Profite</span>
-                                                <h3 class="mb-0 mt-1 text-success fs-25">{{ monthlyProfit() }} ৳</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon1  my-auto  float-end"> {{-- <i    class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/profit.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="mt-0 text-start">
-                                                <span class="fs-16 font-weight-semibold">Monthly Production</span>
-                                                <h3 class="mb-0 mt-1 text-secondary fs-25">{{ currentMonthProduction() }} ৳
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon1 my-auto  float-end">
-                                                {{-- <i    class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/manufacturing.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="mt-0 text-start">
-                                                <span class="fs-16 font-weight-semibold">Today Collection </span>
-                                                <h3 class="mb-0 mt-1 text-success fs-25">{{ todayCollection() }} ৳</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon1  my-auto  float-end"> {{-- <i    class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/money.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="mt-0 text-start">
-                                                <span class="fs-16 font-weight-semibold">Today Expenditure </span>
-                                                <h3 class="mb-0 mt-1 text-success fs-25">{{ todayExpenditure() }} ৳</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon1  my-auto  float-end"> {{-- <i    class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/Expenditure.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="mt-0 text-start">
-                                                <span class="fs-16 font-weight-semibold">Today Purchase </span>
-                                                <h3 class="mb-0 mt-1 text-success fs-25">{{ todayPurchase() }} ৳</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon1  my-auto  float-end"> {{-- <i    class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/buy-button.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="mt-0 text-start">
-                                                <span class="fs-16 font-weight-semibold">Monthly Collection </span>
-                                                <h3 class="mb-0 mt-1 text-success fs-25">{{ currentMonthDueCollection() }}
-                                                    ৳</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon1  my-auto  float-end"> {{-- <i    class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/money.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="mt-0 text-start">
-                                                <span class="fs-16 font-weight-semibold">Monthly Expenditure </span>
-                                                <h3 class="mb-0 mt-1 text-success fs-25">{{ monthlyExpenditure() }} ৳</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon1  my-auto  float-end"> {{-- <i    class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/Expenditure.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-12 col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-9">
-                                            <div class="mt-0 text-start">
-                                                <span class="fs-16 font-weight-semibold">Monthly Purchase </span>
-                                                <h3 class="mb-0 mt-1 text-success fs-25">{{ currentMonthPurchase() }} ৳
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="icon1  my-auto  float-end"> {{-- <i    class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/buy-button.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
 
 
                     </div>

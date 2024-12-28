@@ -1,0 +1,132 @@
+/*====== LOGIN FORM =====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+    /*===== Colors ======*/
+    --body-color: #000;
+    --input-color: #bdc3c7;
+    --border-color: #dcdde1;
+    --btn-bg-hover-color: #e21e22;
+    --light-color: #20bf6b;
+
+    /*===== Typography ======*/
+    --body-font: 'Josefin Sans', sans-serif;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 1rem;
+}
+
+/*===== Base =====*/
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--body-color);
+    font-weight: normal;
+}
+
+/*bag img */
+.User-reg {
+   width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #00000070, #00000070), url(../img/gr.png) no-repeat center / cover;
+    display: flex;
+}
+/* after */
+.container::after {
+    content: '';
+    width: 195px;
+    height: 50px;
+    background: url(../img/after.png) no-repeat top right / cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container::before {
+    content: '';
+    width: 195px;
+    height: 50px;
+    background: url(../img/before.png) no-repeat bottom left / cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* before */
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgba(244, 239, 239, 0.32);
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+             background: rgb(255 255 255 / 32%);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 35px rgba(0,0,0,0.5);
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+        /* form .row {
+            zoom:55%;
+        } */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            background: #ffffff7d;
+            outline:none;
+
+        }
+        button {
+            padding: 10px;
+            background-color: #0c0808;
+            color: rgb(16, 226, 62);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e81010;
+        }
+        .note {
+            font-size: 12px;
+            color: #666;
+        }
+
+
+
+
+
+
+
+
+
+
+
