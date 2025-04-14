@@ -361,11 +361,11 @@
 
             @include('layouts.sidebars.admin_sidebar')
 
-            {{-- <div class="app-content main-content">
+            <div class="app-content main-content">
                 <div class="m-4">
                     @include('common._alert')
                 </div>
-            </div> --}}
+            </div>
             @yield('content')
 
             <!--Footer-->
@@ -492,7 +492,7 @@
 
 
     @stack('scripts')
-    @include('common._alert')
+    {{-- @include('common._alert') --}}
     <script>
         $(document).ready(function() {
             const element1 = document.querySelector('.dataTables_length');
@@ -544,7 +544,7 @@
         // console.log($('#responsive-datatable').length);
 
         $(".rangeDatepicker").flatpickr({
-            mode: "range",
+            // mode: "range",
             // minDate: "today",
             defaultDate: 'today',
             dateFormat: "Y-m-d",
@@ -564,6 +564,18 @@
             search: true,
             searchText: 'Enter here.'
         });
+
+        function resetSumoSelect(element) {
+        // Destroy the existing instance
+        element.SumoSelect('unload');
+
+        // Reinitialize with new options
+        element.SumoSelect({
+            csvDispCount: 3,
+            search: true,
+            searchText: 'Enter here.'
+        });
+    }
         var imagesPreview = function(input, placeToInsertImagePreview) {
 
             if (input.files) {
@@ -646,6 +658,65 @@
             });
 
         }, 1000);
+    </script>
+       <script>
+
+        function getDistrict(e) {
+            var division_id = e.value;
+            $.ajax({
+                url: "{{ route('getDistrict') }}",
+                type: 'POST',
+                data: {
+                    division_id: division_id,
+                    _token: '{{ csrf_token() }}'
+                },
+                success: function(data) {
+                    $('#district').html(data);
+                    if (data) {
+                        resetSumoSelect($('#district'))
+                    }
+
+                }
+            });
+        }
+
+        function getUpazila(e) {
+            var division_id = e.value;
+            $.ajax({
+                url: "{{ route('getUpazila') }}",
+                type: 'POST',
+                data: {
+                    division_id: division_id,
+                    _token: '{{ csrf_token() }}'
+                },
+                success: function(data) {
+                    $('#upazila').html(data);
+                    if (data) {
+                        resetSumoSelect($('#upazila'))
+                    }
+                    // $('#upazila').select2();
+                }
+            });
+        }
+
+        function getUnion(e) {
+            var division_id = e.value;
+            $.ajax({
+                url: "{{ route('getUnion') }}",
+                type: 'POST',
+                data: {
+                    division_id: division_id,
+                    _token: '{{ csrf_token() }}'
+                },
+                success: function(data) {
+                    $('#union').html(data);
+                    // $('#union').select2();
+                    if (data) {
+                        resetSumoSelect($('#union'))
+                    }
+                }
+            });
+        }
     </script>
 </body>
 

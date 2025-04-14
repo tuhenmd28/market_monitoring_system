@@ -1,30 +1,40 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SaleController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\PartyController;
-use App\Http\Controllers\SalaryController;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AdvanceCollectionController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CostCategoryController;
+use App\Http\Controllers\DailyExpenditureController;
+use App\Http\Controllers\DailyProductionController;
+use App\Http\Controllers\DueCollectionController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\FrontendController;
-use App\Http\Controllers\PurchaseController;
-use App\Http\Controllers\SaleStockController;
-use App\Http\Controllers\ProductTypeController;
-use App\Http\Controllers\SaleProductController;
-use App\Http\Controllers\CostCategoryController;
-use App\Http\Controllers\DueCollectionController;
-use App\Http\Controllers\PurchasePartyController;
-use App\Http\Controllers\PurchaseStockController;
-use App\Http\Controllers\DailyProductionController;
-use App\Http\Controllers\PurchaseProductController;
-use App\Http\Controllers\DailyExpenditureController;
-use App\Http\Controllers\AdvanceCollectionController;
+use App\Http\Controllers\GovernmentStorageController;
 use App\Http\Controllers\PartyConsiderationController;
+use App\Http\Controllers\PartyController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductCostController;
+use App\Http\Controllers\ProductTypeController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PurchaseController;
+use App\Http\Controllers\PurchasePartyController;
+use App\Http\Controllers\PurchaseProductController;
+use App\Http\Controllers\PurchaseStockController;
+use App\Http\Controllers\SalaryController;
+use App\Http\Controllers\SaleController;
+use App\Http\Controllers\SaleProductController;
+use App\Http\Controllers\SaleStockController;
+use Illuminate\Support\Facades\Route;
 
+
+Route::get("/auction",[FrontendController::class,'auction'])->name('auction');
+Route::get("/about",[FrontendController::class,'about'])->name('about');
+Route::get("/product1",[FrontendController::class,'product'])->name('product');
+Route::get("/product_details/{id}",[FrontendController::class,'product_details'])->name('product_details');
+Route::get("/contact",[FrontendController::class,'contact'])->name('contact');
 Route::get("/",[FrontendController::class,'index'])->name('index');
+Route::get("/signup",[FrontendController::class,"admin_register"])->name('signup');
+Route::get("/signin",[FrontendController::class,"signin"])->name('signin');
 Route::get("/admin_signup",[FrontendController::class,"adminSignUp"])->name('admin_signup');
 Route::get("/admin_signin",[FrontendController::class,"adminSignIn"])->name('admin_signin')->middleware(['guest']);
 Route::get("/farmer_signup",[FrontendController::class,"farmerSignUp"])->name('farmer_signup');
@@ -36,6 +46,7 @@ Route::post("/getUpazila",[FrontendController::class,"getUpazila"])->name('getUp
 Route::post("/getUnion",[FrontendController::class,"getUnion"])->name('getUnion');
 
 Route::post("/admin_signup_store",[FrontendController::class,"admin_signup_store"])->name('admin_signup_store');
+Route::post("/farmer_signup_store",[FrontendController::class,"farmer_signup_store"])->name('farmer_signup_store');
 Route::post("/login_store",[FrontendController::class,"login"])->name('login_store');
 // Route::post("/farmer_signup_store",[FrontendController::class,"farmerSignUp"])->name('farmer_signup_store');
 // Route::post("/",[FrontendController::class,"farmerSignIn"])->name('farmer_signin');
@@ -58,8 +69,12 @@ Route::group([
     Route::get('report',function(){
         return view('allreport.salary_report');
     });
+    Route::resource('product_cost', ProductCostController::class);
+    Route::resource('government_storage', GovernmentStorageController::class);
+    Route::resource('purchase_product', PurchaseProductController::class);
     Route::resource('category', CategoryController::class);
     Route::resource('product', ProductController::class);
+    Route::post('set_product_auction', [ProductController::class, 'set_product_auction'])->name('set_product_auction');
     Route::resource('product_type', ProductTypeController::class);
     Route::get('/profile/{id}', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -68,6 +83,7 @@ Route::group([
     Route::get('home', [AdminController::class, "home"])->name('home');
     Route::get('send', [AdminController::class, "send"])->name('send');
     Route::post('send', [AdminController::class, "send"])->name('send');
+    Route::get('users/{status?}', [AdminController::class, "users"])->name('users');
 
 
     Route::get("category_size",[CategoryController::class,"size"])->name('category_size');

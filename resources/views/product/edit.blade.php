@@ -55,28 +55,22 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label class="form-label">Product Type<span class="text-red">*</span></label>
-                                            <select name="product_type_id" class="form-control serchBox" required id="product_type_id" >
-                                                <option value=""> Product Type </option>
-                                                @foreach ($productType as $item)
-                                                <option @selected($product->product_type_id == $item->id) value="{{ $item->id }}"> {{ $item->name }} </option>
 
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    </div>
 
                                     <div class="col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <label class="form-label">Product Price <span class="text-red">*</span></label>
-                                            <input type="number" step=any  value="{{ $product->price }}" class="form-control"  id='price' name="price"
+                                            <input type="number" step=any  value="{{ $product->start_price }}" class="form-control"  id='price' name="price"
                                                 placeholder="Enter Product Price" required>
                                         </div>
                                     </div>
 
-
+                                    <div class="col-sm-6 col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Product Description <span class="text-red">*</span></label>
+                                            <textarea name="description" id="description" class="from-control content" required>{{ $product->description }}</textarea>
+                                        </div>
+                                    </div>
                                     {{-- <div class="col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <label class="form-label">Product Quentity </label>
@@ -88,9 +82,22 @@
 
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label class="form-label">Product Image (Optional)</label>
+                                            <label class="form-label">Product Image </label>
 
                                             <input type="file" name="image" data-default-file="{{ asset('product')."/".$product->image }}" class="dropify" data-height="150">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Product Multiple Image  </label>
+                                            <div class="multiple_image_preview">
+                                                {{-- {{ dd($product->images) }} --}}
+                                                @foreach ($product->images as $img)
+                                                    <img src="{{ asset('product/'.$img->image) }}" alt="img">
+                                                @endforeach
+                                            </div>
+                                            <input type="file" id="multiple_image" name="multiple[]" class="dropify" data-height="150" multiple>
+
                                         </div>
                                     </div>
 
@@ -123,7 +130,8 @@
 @endsection
 
 @push('scripts')
-
+<script src="{{ asset('assets/plugins/wysiwyag/jquery.richtext.js') }}"></script>
+<script src="{{ asset('assets/js/form-editor.js') }}"></script>
     <script>
         $(document).ready(function() {
             $("#category").on('change', function() {

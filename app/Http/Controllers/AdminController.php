@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Party;
+use App\Models\Farmer;
+use App\Models\Product;
 use App\Models\Category;
 use App\Models\Employee;
 use App\Models\CategoryGsm;
@@ -11,10 +14,12 @@ use App\Models\SaleProduct;
 use App\Models\CategorySize;
 use App\Models\CategoryUnit;
 use App\Models\CostCategory;
+use App\Models\Product_cost;
 use Illuminate\Http\Request;
 use App\Models\CategoryColor;
 use App\Models\PurchaseProduct;
 use App\Http\Traits\SmsSendTrait;
+use App\Models\GovernmentStorage;
 use App\Http\Controllers\Controller;
 
 class AdminController extends Controller
@@ -33,6 +38,16 @@ class AdminController extends Controller
                 $package =  ProductType::find($request->id);
                 $package->delete();
                 $route = 'admin.product_type.index';
+                break;
+            case 'government_storage':
+                $package =  GovernmentStorage::find($request->id);
+                $package->delete();
+                $route = 'admin.government_storage.index';
+                break;
+            case 'product_cost':
+                $package =  Product_cost::find($request->id);
+                $package->delete();
+                $route = 'admin.product_cost.index';
                 break;
 
             case 'employe':
@@ -95,18 +110,7 @@ class AdminController extends Controller
     //     $size = CategorySize::where('')->select('price')->first();
     //     // echo $price?->price;
     // }
-    public function getPartyInfo(Request $request)
-    {
-        $id = $request->id;
-        $details = Party::where('id',$id)->first();
-        return response()->json(['data' => $details]);
-    }
-    public function getProductName(Request $request)
-    {
-        $id = $request->id;
-        $details = SaleProduct::whereNotIn('id',$id)->where('status',1)->get();
-        return response()->json(['data' => $details]);
-    }
+ 
     public function send(Request $request)
     {
         if($request->method() == 'GET'){
@@ -121,4 +125,16 @@ class AdminController extends Controller
        session()->flash('success',$staus);
        return redirect()->back();
     }
+    public function users(Request $request, $farmer_status = "all")
+    {
+        if($farmer_status == "all"){
+            $farmer = User::with('division','district','upazila','union','farmer1')->get();
+        }else{
+
+            $farmer = User::with('division','district','upazila','union','farmer1')->where('type',$farmer_status)->get();
+        }
+        // dd($farmer);
+        return view('user.list',compact('farmer'));
+    }
+
 }

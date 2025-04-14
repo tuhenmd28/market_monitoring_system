@@ -4,931 +4,1717 @@
 
 
 
-
-    <!-- Hero Section Start -->
-    <section class="banner-section style-v3 overflow-hidden position-relative">
+    <!--============= Banner Section Starts Here =============-->
+    <section class="banner-section bg_img" data-background="{{ asset('frontend/assets/images/banner/banner-bg-1.png') }}">
         <div class="container">
-            <div class="banner-wrapperv3 position-relative">
-                <div class="row">
-                    <div class="col-lg-7 col-md-9">
-                        <div class="hero-contentv03">
-                            <div class="sun-star wow fadeInDown" data-wow-delay=".3s">
-                                <img src="{{ asset('frontend/assets/img/icon/icon-sunstar.svg') }}" alt="img">
-                                Best farming
-                            </div>
-                            <h1 class="wow fadeInUp" data-wow-delay="0.4s">
-                                Discover the <span>art <br> of gardening</span>
-                            </h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.6s">
-                                We have been operating for over a decade, providing top-notch services to our clients
-                                and building a strong track record
-                                in the industry.
-                            </p>
-                            <div class="adjust-video">
-                                <a href="about.html" class="cmn-btn wow fadeInUp" data-wow-delay="0.9s">
-                                    Read More
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                                <div class="video-area">
-                                    <a href="https://www.youtube.com/watch?v=ZP1XyLYraAA"
-                                        class="video-cmn d-center video-popup">
-                                        <i class="fa-solid fa-play"></i>
-                                    </a>
-                                    <h5>
-                                        Watch Video
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Element -->
-        <img src="{{ asset('frontend/assets/img/banner/hero-3.jpg') }}" alt="img" class="hero-threthumb">
-        <!-- Element -->
-    </section>
-
-    <!-- Servicev03 section -->
-    <section class="servicev3-section overflow-hidden section-padding white-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xxl-6 col-xl-7 col-md-8 col-sm-11">
-                    <div class="section-title mb-60 text-center">
-                        <h5 class="p1-clr wow fadeInLeft text-uppercase" data-wow-delay="0.4s">
-                            Our Services
-                        </h5>
-                        <h2 class="wow fadeInDown" data-wow-delay=".3s">
-                            Nourishing the world from seed to table
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <!-- Body -->
-            <div class="row g-xl-4 g-3 justify-content-center">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="service-itemsv02 service-style03">
-                        <div class="thumb w-100">
-                            <img src="{{ asset('frontend/assets/img/service/servicev3-1.jpg') }}" alt="img" class="w-100 mimg">
-                        </div>
-                        <div class="content">
-                            <a href="service-details.html" class="title">Green Grow Solutions</a>
-                            <img src="{{ asset('frontend/assets/img/icon/water-hose.svg') }}" alt="icon">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="service-itemsv02 service-style03">
-                        <div class="thumb w-100">
-                            <img src="{{ asset('frontend/assets/img/service/servicev3-2.jpg') }}" alt="img" class="w-100 mimg">
-                        </div>
-                        <div class="content">
-                            <a href="service-details.html" class="title">Harvest Tech to Farm Service</a>
-                            <img src="{{ asset('frontend/assets/img/icon/ser-flower.svg') }}" alt="icon">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="service-itemsv02 service-style03">
-                        <div class="thumb w-100">
-                            <img src="{{ asset('frontend/assets/img/service/servicev3-3.jpg') }}" alt="img" class="w-100 mimg">
-                        </div>
-                        <div class="content">
-                            <a href="service-details.html" class="title">AgriPro is the Consulting</a>
-                            <img src="{{ asset('frontend/assets/img/icon/map-plant.svg') }}" alt="icon">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Version V01 -->
-    <section class="about-section style-v01 white-bg">
-        <div class="container">
-            <div class="about-wrapperv3">
-                <div class="row g-4 align-items-center justify-content-center">
-                    <div class="col-lg-6 col-md-6 col-sm-8 order-md-0 order-1">
-                        <div class="about-thumv03 position-relative pe-xl-4 wow fadeInDown" data-wow-delay=".3s">
-                            <img src="{{ asset('frontend/assets/img/about/aboutv3.png') }}" alt="img" class="mimg">
-                            <div class="avarage-counting">
-                                <div class="avarag">
-                                    <img src="{{ asset('frontend/assets/img/icon/agriculture.svg') }}" alt="img">
-                                </div>
-                                <div class="cont">
-                                    <h5>
-                                        Agriculture Activity
-                                    </h5>
-                                    <span>
-                                        Loream is ispam
-                                    </span>
-                                </div>
-                            </div>
-                            <a href="https://www.youtube.com/watch?v=ZP1XyLYraAA" class="play-v3 video-popup">
-                                <i class="fa-solid fa-play"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="about-contentv1">
-                            <div class="section-title mb-40">
-                                <h5 class="p1-clr text-uppercase wow fadeInLeft" data-wow-delay="0.4s">
-                                    Why Choose us
-                                </h5>
-                                <h2 class="wow fadeInDown" data-wow-delay=".3s">
-                                    Farming with passion the feeding with purpose
-                                </h2>
-                                <p class="wow fadeInUp" data-wow-delay=".4s">
-                                    Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dict facisem.
-                                    Imperdiet
-                                    massa turpis sit Lorem ipsum
-                                    dolor sit amet consectetur. Amet the lectus mi ultricies dictum facilisis sem.
-                                    Imperdiet
-                                </p>
-                                <div class="progress_bar d-grid gap-xxl-4 gap-4">
-                                    <div class="progress_bar_item">
-                                        <div class="per-title d-flex align-items-center justify-content-between">
-                                            <div class="item_label p900-clr">FarmSmart Innovations</div>
-                                        </div>
-                                        <div class="item_bar">
-                                            <div class="progress" data-progress="70"></div>
-                                        </div>
-                                    </div>
-                                    <div class="progress_bar_item">
-                                        <div class="per-title d-flex align-items-center justify-content-between">
-                                            <div class="item_label p900-clr">CropCare Solutions</div>
-                                        </div>
-                                        <div class="item_bar">
-                                            <div class="progress" data-progress="80"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="about.html" class="cmn-btn">
-                                    Read More
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery section -->
-    <section class="gallery-sectionv02 overflow-hidden white-bg space-top">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xxl-5 col-xl-7 col-md-8 col-sm-11">
-                    <div class="section-title mb-60 text-center">
-                        <h5 class="p1-clr text-uppercase wow fadeInLeft" data-wow-delay="0.4s">
-                            OUR GALLARY
-                        </h5>
-                        <h2 class="wow fadeInDown" data-wow-delay=".3s">
-                            Bringing nature's bounty to your plate
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <!-- Body -->
-            <div class="d-flex flex-md-nowrap flex-wrap gap-lg-4 gap-3">
-                <div class="gallery-itemsv02 gallery-itemshover wow fadeInUp" data-wow-delay=".3s">
-                    <div class="thumb w-100">
-                        <img src="{{ asset('frontend/assets/img/gallery/galleryv2-1.jpg') }}" alt="img" class="w-100">
-                    </div>
-                    <a href="gallery-details.html" class="arrow">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                    <div class="content">
-                        <a href="gallery-details.html" class="title">Farming for a Better Tomorrow</a>
-                        <p>
-                            Green Thumb Farm Services
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-xl-6">
+                    <div class="banner-content cl-white">
+                        <h5 class="cate" data-aos="fade-down" data-aos-duration="1000">Next Generation Auction</h5>
+                        <h1 class="title" data-aos="zoom-out-up" data-aos-duration="1200"><span class="d-xl-block">Find Your</span> Next Deal!</h1>
+                        <p class="pras" data-aos="zoom-out-down" data-aos-duration="1300">
+                            Online Auction is where everyone goes to shop, sell,and give, while discovering variety and affordability.
                         </p>
+                        <a href="#0" class="custom-button yellow btn-large" data-aos="zoom-out-up" data-aos-duration="1500">Get Started</a>
                     </div>
                 </div>
-                <div class="gallery-itemsv02 white-bg wow fadeInUp" data-wow-delay=".5s">
-                    <div class="thumb w-100">
-                        <img src="{{ asset('frontend/assets/img/gallery/galleryv2-2.jpg') }}" alt="img" class="w-100">
-                    </div>
-                    <a href="gallery-details.html" class="arrow">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                    <div class="content">
-                        <a href="gallery-details.html" class="title">Farming for a Better Tomorrow</a>
-                        <p>
-                            Green Thumb Farm Services
-                        </p>
-                    </div>
-                </div>
-                <div class="gallery-itemsv02 gallery-itemshover  wow fadeInUp" data-wow-delay=".7s">
-                    <div class="thumb w-100">
-                        <img src="{{ asset('frontend/assets/img/gallery/galleryv2-3.jpg') }}" alt="img" class="w-100">
-                    </div>
-                    <a href="gallery-details.html" class="arrow">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </a>
-                    <div class="content">
-                        <a href="gallery-details.html" class="title">Farming for a Better Tomorrow</a>
-                        <p>
-                            Green Thumb Farm Services
-                        </p>
+                <div class="d-none d-lg-block col-lg-6" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="banner-thumb-2">
+                        <img src="{{ asset('frontend/assets/images/banner/banner-1.png') }}" alt="banner">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Feature V02 -->
-    <section class="feature-sectionv02 p900-bg space-top">
-        <div class="container">
-            <div class="row g-4 align-items-lg-start align-items-center justify-content-center">
-                <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-6 col-sm-10">
-                    <div class="about-contentv1">
-                        <div class="section-title mb-40">
-                            <h5 class="p1-clr text-uppercase wow fadeInLeft" data-wow-delay="0.4s">
-                                OUR FEATURES
-                            </h5>
-                            <h2 class="text-white mb-24 wow fadeInDown" data-wow-delay=".3s">
-                                Growing strong,farm feeding futures
-                            </h2>
-                            <p class="text-white wow fadeInUp mb-lg-4 mb-3" data-wow-delay=".4s">
-                                Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem.
-                                Imperdiet massa turpis site
-                            </p>
-                            <ul class="about-list2 mb-40 gap-2">
-                                <li class="text-white"><i class="fa-solid fa-check"></i> Grow with Agriculture</li>
-                                <li class="text-white"><i class="fa-solid fa-check"></i> Farming for a Better Future
-                                </li>
-                                <li class="text-white"><i class="fa-solid fa-check"></i> From Farm to Table, Agriculture
-                                    Matters</li>
-                            </ul>
-                            <a href="service.html" class="cmn-btn text-white primary-border">
-                                Read More
-                                <i class="fa-solid fa-arrow-right p1-clr"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-8 ps-lg-5">
-                    <div class="feature-thumv02 position-relative w-100 wow fadeInDown" data-wow-delay=".3s">
-                        <img src="{{ asset('frontend/assets/img/about/feature-thumb2.png') }}" alt="img" class="w-100">
-                    </div>
-                </div>
-            </div>
+        <div class="banner-shape d-none d-lg-block">
+            <img src="{{ asset('frontend/assets/css/img/banner-shape.png') }}" alt="css">
         </div>
-        <!-- Element -->
-        <img src="{{ asset('frontend/assets/img/element/feature-green2.png') }}" alt="img" class="feature-element2">
     </section>
+    <!--============= Banner Section Ends Here =============-->
 
-    <!-- Pricing section -->
-    <section class="pricing-section overflow-hidden white-bg section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xxl-6 col-xl-7 col-md-8 col-sm-11">
-                    <div class="section-title mb-60 text-center">
-                        <h5 class="p1-clr wow fadeInLeft" data-wow-delay="0.4s">
-                            OUR PRICING
-                        </h5>
-                        <h2 class="wow fadeInDown" data-wow-delay=".3s">
-                            Harvesting dreams, one crop at a time
-                        </h2>
+
+    <div class="browse-section ash-bg">
+        <!--============= Hightlight Slider Section Starts Here =============-->
+        <div class="browse-slider-section mt--140">
+            <div class="container">
+                <div class="section-header-2 cl-white mb-4">
+                    <div class="left" data-aos="flip-up" data-aos-duration="1500">
+                        <h6 class="title pl-0 w-100">Browse the highlights</h6>
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#0" class="bro-prev"><i class="flaticon-left-arrow"></i></a>
+                        <a href="#0" class="bro-next active"><i class="flaticon-right-arrow"></i></a>
                     </div>
                 </div>
-            </div>
-            <!-- Body -->
-            <div class="row g-xl-4 g-3 justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="pricing-itemsv1">
-                        <h5>
-                            Consult
-                        </h5>
-                        <div class="price d-flex">
-                            <h2>
-                                $9
-                            </h2>
-                            <span>
-                                /month
-                            </span>
-                        </div>
-                        <ul class="pricing-list">
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>Mistakes To Avoid
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>Your Startup
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-xmark"></i> Knew About Fonts
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-xmark"></i>Winning Metric for Your Startup
-                            </li>
-                        </ul>
-                        <a href="#" class="cmn-btn primary-border">
-                            Get Now
+                <div class="m--15">
+                    <div class="browse-slider owl-theme owl-carousel">
+                        <a href="#0" class="browse-item">
+                            <img src="{{ asset('frontend/assets/images/auction/01.png') }}" alt="auction">
+                            <span class="info">Vehicles</span>
                         </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="pricing-itemsv1 active">
-                        <h5>
-                            Perfect
-                        </h5>
-                        <div class="price d-flex">
-                            <h2>
-                                $29
-                            </h2>
-                            <span>
-                                /month
-                            </span>
-                        </div>
-                        <ul class="pricing-list">
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>Mistakes To Avoid
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>Your Startup
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i> Knew About Fonts
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>Winning Metric for Your Startup
-                            </li>
-                        </ul>
-                        <a href="#" class="cmn-btn primary-border">
-                            Get Now
+                        <a href="#0" class="browse-item">
+                            <img src="{{ asset('frontend/assets/images/auction/02.png') }}" alt="auction">
+                            <span class="info">Jewelry</span>
                         </a>
-                        <span class="price-badge">
-                            Polupar
-                        </span>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="pricing-itemsv1">
-                        <h5>
-                            Easy
-                        </h5>
-                        <div class="price d-flex">
-                            <h2>
-                                $19
-                            </h2>
-                            <span>
-                                /month
-                            </span>
-                        </div>
-                        <ul class="pricing-list">
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>Mistakes To Avoid
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>Your Startup
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i> Knew About Fonts
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>Winning Metric for Your Startup
-                            </li>
-                        </ul>
-                        <a href="#" class="cmn-btn primary-border">
-                            Get Now
+                        <a href="#0" class="browse-item">
+                            <img src="{{ asset('frontend/assets/images/auction/03.png') }}" alt="auction">
+                            <span class="info">Watches</span>
+                        </a>
+                        <a href="#0" class="browse-item">
+                            <img src="{{ asset('frontend/assets/images/auction/04.png') }}" alt="auction">
+                            <span class="info">Electronics</span>
+                        </a>
+                        <a href="#0" class="browse-item">
+                            <img src="{{ asset('frontend/assets/images/auction/05.png') }}" alt="auction">
+                            <span class="info">Sports</span>
+                        </a>
+                        <a href="#0" class="browse-item">
+                            <img src="{{ asset('frontend/assets/images/auction/06.png') }}" alt="auction">
+                            <span class="info">Real Estate</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Element -->
-        <img src="{{ asset('frontend/assets/img/element/pricing-animal.png') }}" alt="img" class="pricing-element">
-    </section>
+        <!--============= Hightlight Slider Section Ends Here =============-->
 
-    <!-- Counter Section -->
-    <section class="counter-sectionv03 position-relative">
-        <div class="container">
-            <div class="counter-version-wrapv1 d-flex align-items-center justify-content-between gap-4">
-                <div class="counter-items style02">
-                    <div class="con-box">
-                        <h2>
-                            <span class="count">200</span>+
-                        </h2>
-                        <p>Team member</p>
+        <!--============= Car Auction Section Starts Here =============-->
+        <section class="car-auction-section padding-bottom padding-top pos-rel oh">
+            <div class="car-bg"><img src="{{ asset('frontend/assets/images/auction/car/car-bg.png') }}" alt="car"></div>
+            <div class="container">
+                <div class="section-header-3" data-aos="zoom-out-down" data-aos-duration="1200">
+                    <div class="left">
+                        <div class="thumb">
+                            <img src="{{ asset('frontend/assets/images/header-icons/car-1.png') }}" alt="header-icons">
+                        </div>
+                        <div class="title-area">
+                            <h2 class="title">Vehicles</h2>
+                            <p>We offer affordable Vehicles</p>
+                        </div>
                     </div>
+                    <a href="#0" class="normal-button">View All</a>
                 </div>
-                <div class="count-animal d-lg-block d-none">
-                    <img src="{{ asset('frontend/assets/img/icon/count-animal.svg') }}" alt="img">
-                </div>
-                <div class="counter-items style02">
-                    <div class="con-box">
-                        <h2>
-                            <span class="count">20</span>+
-                        </h2>
-                        <p>Winning award</p>
-                    </div>
-                </div>
-                <div class="count-animal d-lg-block d-none">
-                    <img src="{{ asset('frontend/assets/img/icon/count-animal.svg') }}" alt="img">
-                </div>
-                <div class="counter-items style02">
-                    <div class="con-box">
-                        <h2>
-                            <span class="count">10</span>k+
-                        </h2>
-                        <p>Complete project</p>
-                    </div>
-                </div>
-                <div class="count-animal d-lg-block d-none">
-                    <img src="{{ asset('frontend/assets/img/icon/count-animal.svg') }}" alt="img">
-                </div>
-                <div class="counter-items style02">
-                    <div class="con-box">
-                        <h2>
-                            <span class="count">900</span>+
-                        </h2>
-                        <p>Client review</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Faq Section -->
-    <section class="faq-section section-padding p100-bg">
-        <div class="container">
-            <div class="row g-md-4 g-2 align-items-center justify-content-between">
-                <div class="col-lg-5 col-md-6">
-                    <div class="faq-content-left">
-                        <div class="section-title mb-40">
-                            <h5 class="p1-clr wow fadeInLeft text-uppercase" data-wow-delay="0.4s">
-                                FAQ
-                            </h5>
-                            <h2 class="wow fadeInDown" data-wow-delay=".3s">
-                                How often should I water my Farming?
-                            </h2>
-                            <p>
-                                It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its
-                                layout. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                                their default model text
-                            </p>
-                            <div class="faq-watch">
-                                <a href="https://www.youtube.com/watch?v=ZP1XyLYraAA"
-                                    class="video-cmn d-center video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                                <h5>
-                                    Watch Video
-                                </h5>
+                <div class="row justify-content-center mb-30-none">
+                    <div class="col-sm-10 col-md-6 col-lg-4">
+                        <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="2200">
+                            <div class="auction-thumb">
+                                <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/car/auction-1.jpg') }}" alt="car"></a>
+                                <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 order-md-0 order-1">
-                    <div class="tab-faq faq">
-                        <div class="accordion-section d-grid gap-xxl-4 gap-lg-3 gap-2">
-                            <div class="accordion-single">
-                                <h5 class="header-area">
-                                    <button
-                                        class="accordion-btn d-flex align-items-center d-flex position-relative w-100"
-                                        type="button">
-                                        How do I create a vegetable Agriculture?
-                                    </button>
-                                </h5>
-                                <div class="content-area">
-                                    <div class="content-body">
-                                        <p>
-                                            It is a long established fact that a reader will be distracted by the
-                                            readable content of a page when looking at its
-                                            layout. Many desktop publishing packages and web page editors now use Lorem
-                                            Ipsum as their default model text
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-single">
-                                <h5 class="header-area">
-                                    <button
-                                        class="accordion-btn d-flex align-items-center d-flex position-relative w-100"
-                                        type="button">
-                                        How Farming during the winter months?
-                                    </button>
-                                </h5>
-                                <div class="content-area">
-                                    <div class="content-body">
-                                        <p>
-                                            It is a long established fact that a reader will be distracted by the
-                                            readable content of a page when looking at its
-                                            layout. Many desktop publishing packages and web page editors now use Lorem
-                                            Ipsum as their default model text
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-single">
-                                <h5 class="header-area">
-                                    <button
-                                        class="accordion-btn d-flex align-items-center d-flex position-relative w-100"
-                                        type="button">
-                                        How do I prevent in my Argiculture?
-                                    </button>
-                                </h5>
-                                <div class="content-area">
-                                    <div class="content-body">
-                                        <p>
-                                            It is a long established fact that a reader will be distracted by the
-                                            readable content of a page when looking at its
-                                            layout. Many desktop publishing packages and web page editors now use Lorem
-                                            Ipsum as their default model text
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-single">
-                                <h5 class="header-area">
-                                    <button
-                                        class="accordion-btn d-flex align-items-center d-flex position-relative w-100"
-                                        type="button">
-                                        What are the prerequisites course?
-                                    </button>
-                                </h5>
-                                <div class="content-area">
-                                    <div class="content-body">
-                                        <p>
-                                            It is a long established fact that a reader will be distracted by the
-                                            read content of a page when looking at its layout.
-                                            Many desktop publish packages and web page editors now use Loremdefault
-                                            model
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Element -->
-        <img src="{{ asset('frontend/assets/img/element/faq-element.png') }}" alt="img" class="faq-element">
-    </section>
-
-    <!--<< Sponsor Branding Start >>-->
-    <section class="sponsor-branding-section section-padding white-bg">
-        <div class="container">
-            <div class="swiper brand-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="{{ asset('frontend/assets/img/sponsor/sp1.png') }}" alt="img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="{{ asset('frontend/assets/img/sponsor/sp2.png') }}" alt="img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="{{ asset('frontend/assets/img/sponsor/sp3.png') }}" alt="img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="{{ asset('frontend/assets/img/sponsor/sp4.png') }}" alt="img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="{{ asset('frontend/assets/img/sponsor/sp5.png') }}" alt="img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Testimonial Version Three -->
-    <section class="testimonial-section style-section-v03 overflow-hidden">
-        <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-6 col-md-6">
-                    <div class="testimonial-common-wrapper testimonial-wrapperv02 position-relative">
-                        <div class="section-title mb-50">
-                            <h5 class="p2-clr wow fadeInLeft" data-wow-delay="0.4s">
-                                Testimonial
-                            </h5>
-                            <h2 class="wow fadeInDown" data-wow-delay=".3s">
-                                Farm fresh goodness <br> for all
-                            </h2>
-                        </div>
-                        <div class="swiper testimonial-slidewrap01 ">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="testimonail-common-items stylev03">
-                                        <div class="d-lg-flex d-grid justify-content-between">
-                                            <div class="review-man">
-                                                <img src="{{ asset('frontend/assets/img/testimonial/re2.png') }}" alt="img">
-                                                <div class="cont">
-                                                    <h3>
-                                                        Leslie Alexander
-                                                    </h3>
-                                                    <span>
-                                                        Nursing Assistant
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="stars">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
+                            <div class="auction-content">
+                                <h6 class="title">
+                                    <a href="product-details.html">2018 Hyundai Sonata</a>
+                                </h6>
+                                <div class="bid-area">
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
                                         </div>
-                                        <p>
-                                            Financial planners help people to knowledge in about how to invest and save
-                                            their moneye the most efficient way in to
-                                            eve.planners Financial planners help people to my destin knowledge in about
-                                            design
-                                        </p>
-                                        <div class="dot-cmn"></div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonail-common-items stylev03">
-                                        <div class="d-lg-flex d-grid justify-content-between">
-                                            <div class="review-man">
-                                                <img src="{{ asset('frontend/assets/img/testimonial/re2.png') }}" alt="img">
-                                                <div class="cont">
-                                                    <h3>
-                                                        Leslie Alexander
-                                                    </h3>
-                                                    <span>
-                                                        Nursing Assistant
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="stars">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
                                         </div>
-                                        <p>
-                                            Financial planners help people to knowledge in about how to invest and save
-                                            their moneye the most efficient way in to
-                                            eve.planners Financial planners help people to my destin knowledge in about
-                                            design
-                                        </p>
-                                        <div class="dot-cmn"></div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonail-common-items stylev03">
-                                        <div class="d-lg-flex d-grid justify-content-between">
-                                            <div class="review-man">
-                                                <img src="{{ asset('frontend/assets/img/testimonial/re2.png') }}" alt="img">
-                                                <div class="cont">
-                                                    <h3>
-                                                        Leslie Alexander
-                                                    </h3>
-                                                    <span>
-                                                        Nursing Assistant
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="stars">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-money"></i>
                                         </div>
-                                        <p>
-                                            Financial planners help people to knowledge in about how to invest and save
-                                            their moneye the most efficient way in to
-                                            eve.planners Financial planners help people to my destin knowledge in about
-                                            design
-                                        </p>
-                                        <div class="dot-cmn"></div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonail-common-items stylev03">
-                                        <div class="d-lg-flex d-grid justify-content-between">
-                                            <div class="review-man">
-                                                <img src="{{ asset('frontend/assets/img/testimonial/re2.png') }}" alt="img">
-                                                <div class="cont">
-                                                    <h3>
-                                                        Leslie Alexander
-                                                    </h3>
-                                                    <span>
-                                                        Nursing Assistant
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="stars">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
+                                        <div class="amount-content">
+                                            <div class="current">Buy Now</div>
+                                            <div class="amount">$5,00.00</div>
                                         </div>
-                                        <p>
-                                            Financial planners help people to knowledge in about how to invest and save
-                                            their moneye the most efficient way in to
-                                            eve.planners Financial planners help people to my destin knowledge in about
-                                            design
-                                        </p>
-                                        <div class="dot-cmn"></div>
                                     </div>
+                                </div>
+                                <div class="countdown-area">
+                                    <div class="countdown">
+                                        <div id="bid_counter26"></div>
+                                    </div>
+                                    <span class="total-bids">30 Bids</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#0" class="custom-button">Submit a bid</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-10 col-md-6 col-lg-4">
+                        <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="1100">
+                            <div class="auction-thumb">
+                                <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/car/auction-2.jpg') }}" alt="car"></a>
+                                <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                            </div>
+                            <div class="auction-content">
+                                <h6 class="title">
+                                    <a href="product-details.html">2018 Nissan Versa, S</a>
+                                </h6>
+                                <div class="bid-area">
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-money"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Buy Now</div>
+                                            <div class="amount">$5,00.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="countdown-area">
+                                    <div class="countdown">
+                                        <div id="bid_counter27"></div>
+                                    </div>
+                                    <span class="total-bids">30 Bids</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#0" class="custom-button">Submit a bid</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-10 col-md-6 col-lg-4">
+                        <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="1200">
+                            <div class="auction-thumb">
+                                <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/car/auction-3.jpg') }}" alt="car"></a>
+                                <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                            </div>
+                            <div class="auction-content">
+                                <h6 class="title">
+                                    <a href="product-details.html">2018 Honda Accord, Sport</a>
+                                </h6>
+                                <div class="bid-area">
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-money"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Buy Now</div>
+                                            <div class="amount">$5,00.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="countdown-area">
+                                    <div class="countdown">
+                                        <div id="bid_counter28"></div>
+                                    </div>
+                                    <span class="total-bids">30 Bids</span>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#0" class="custom-button">Submit a bid</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="testimonial-thumbv3 w-100 wow fadeInDown" data-wow-delay=".4s">
-                        <img src="{{ asset('frontend/assets/img/testimonial/testimonial-thumbv3.png') }}" alt="img" class="w-100 mimg">
-                        <div class="testimonial-count">
-                            <img src="{{ asset('frontend/assets/img/icon/apple-count.png') }}" alt="img">
-                            <div class="cont">
-                                <h3>
-                                    <span class="count">15</span>+ Years
-                                </h3>
-                                <p>Happy Customer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-        <!-- Element -->
-    </section>
-
-    <!-- Blog section -->
-    <section class="blog-section overflow-hidden blog-stylev1 white-bg section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xxl-6 col-xl-7 col-md-8 col-sm-11">
-                    <div class="section-title mb-60 text-center">
-                        <h5 class="p1-clr wow fadeInLeft" data-wow-delay="0.4s">
-                            OUR BLOGS
-                        </h5>
-                        <h2 class="wow fadeInDown" data-wow-delay=".3s">
-                            Cultivating a sustainable future for all
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <!-- Body -->
-            <div class="row g-xl-4 g-3 justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-11 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="blog-itemsv1">
-                        <div class="thumb w-100">
-                            <img src="{{ asset('frontend/assets/img/blog/blog1.jpg') }}" alt="img" class="w-100">
-                            <div class="dates">
-                                22 jan
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="comment-inner">
-                                <li>
-                                    <a href="#"><i class="fa-regular fa-comments"></i> Comments (05)</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-regular fa-user"></i> By admin</a>
-                                </li>
-                            </ul>
-                            <a href="blog-details.html" class="title">From Farm to Table an Agriculture</a>
-                            <p>
-                                Agriculture and farming are essential industries that involve
-                            </p>
-                            <a href="blog-details.html" class="arrows">Read More <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-11 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="blog-itemsv1">
-                        <div class="thumb w-100">
-                            <img src="{{ asset('frontend/assets/img/blog/blog2.jpg') }}" alt="img" class="w-100">
-                            <div class="dates">
-                                22 jan
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="comment-inner">
-                                <li>
-                                    <a href="#"><i class="fa-regular fa-comments"></i> Comments (05)</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-regular fa-user"></i> By admin</a>
-                                </li>
-                            </ul>
-                            <a href="blog-details.html" class="title">Farm fresh goodness for alle</a>
-                            <p>
-                                Agriculture and farming are essential industries that involve
-                            </p>
-                            <a href="blog-details.html" class="arrows">Read More <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-11 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="blog-itemsv1">
-                        <div class="thumb w-100">
-                            <img src="{{ asset('frontend/assets/img/blog/blog3.jpg') }}" alt="img" class="w-100">
-                            <div class="dates">
-                                22 jan
-                            </div>
-                        </div>
-                        <div class="content">
-                            <ul class="comment-inner">
-                                <li>
-                                    <a href="#"><i class="fa-regular fa-comments"></i> Comments (05)</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-regular fa-user"></i> By admin</a>
-                                </li>
-                            </ul>
-                            <a href="blog-details.html" class="title">Discover Potential of Agriculture</a>
-                            <p>
-                                Agriculture and farming are essential industries that involve
-                            </p>
-                            <a href="blog-details.html" class="arrows">Read More <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--<< Subscribe Start >>-->
-    <div class="subscrbie-section subscrbie-stylev03">
-        <div class="container">
-            <div class="subscribe-wrapper-v03">
-                <div class="container position-relative">
-                    <div class="row g-4 align-items-end justify-content-between">
-                        <div class="col-lg-6 col-md-6 mb-xl-5 pb-xl-4">
-                            <div class="get-element">
-                                <img src="{{ asset('frontend/assets/img/element/get-element.png') }}" alt="img" class="d-md-block d-none">
-                            </div>
-                            <div class="subs-contentv3">
-                                <h2>
-                                    Get Update <span>Subscribe</span> <br> to Newsletter
-                                </h2>
-                                <form action="#" class="subscribe-form03 flex-xl-nowrap flex-wrap">
-                                    <input type="text" placeholder="Enter Your Email">
-                                    <button type="submit" class="cmn-btn text-capitalize">
-                                        Subcribe
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="conatact-box common-contact-inner position-relative">
-                                <div class="section-title mb-40">
-                                    <h5 class="p1-clr wow fadeInLeft" data-wow-delay="0.4s">
-                                        Contact
-                                    </h5>
-                                    <h2>
-                                        Get Touch Here
-                                    </h2>
-                                </div>
-                                <form action="#" class="row g-xl-4 g-3">
-                                    <div class="col-lg-6">
-                                        <input type="text" placeholder="Name">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <input type="email" placeholder="E-mail">
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <input type="text" placeholder="Subject">
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <textarea name="message" placeholder="Message"></textarea>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <button type="submit" class="cmn-btn text-capitalize">
-                                            Submit Now
-                                        </button>
-                                    </div>
-                                </form>
-                                <!-- Element -->
-                                <img src="{{ asset('frontend/assets/img/element/sun-element.png') }}" alt="img"
-                                    class="sun-element d-xl-block d-none">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
+        <!--============= Car Auction Section Ends Here =============-->
     </div>
+
+
+    <!--============= Jewelry Auction Section Starts Here =============-->
+    <section class="jewelry-auction-section padding-bottom padding-top pos-rel">
+        <div class="jewelry-bg d-none d-xl-block"><img src="{{ asset('frontend/assets/images/auction/jewelry/jwelry-bg.png') }}" alt="jewelry"></div>
+        <div class="container">
+            <div class="section-header-3" data-aos="zoom-out-down" data-aos-duration="1200">
+                <div class="left">
+                    <div class="thumb">
+                        <img src="{{ asset('frontend/assets/images/header-icons/coin-1.png') }}" alt="header-icons">
+                    </div>
+                    <div class="title-area">
+                        <h2 class="title">Jewelry</h2>
+                        <p>Online jewelry auctions where you can bid now and save money</p>
+                    </div>
+                </div>
+                <a href="#0" class="normal-button">View All</a>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="1300">
+                        <div class="auction-thumb">
+                            <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/jewelry/auction-1.jpg') }}" alt="jewelry"></a>
+                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                        </div>
+                        <div class="auction-content">
+                            <h6 class="title">
+                                <a href="product-details.html">Gold Ring With Clear Stones</a>
+                            </h6>
+                            <div class="bid-area">
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-money"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Buy Now</div>
+                                        <div class="amount">$5,00.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="countdown-area">
+                                <div class="countdown">
+                                    <div id="bid_counter23"></div>
+                                </div>
+                                <span class="total-bids">30 Bids</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#0" class="custom-button">Submit a bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="1400">
+                        <div class="auction-thumb">
+                            <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/jewelry/auction-2.jpg') }}" alt="jewelry"></a>
+                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                        </div>
+                        <div class="auction-content">
+                            <h6 class="title">
+                                <a href="product-details.html">Ring With Clear Stone Accents</a>
+                            </h6>
+                            <div class="bid-area">
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-money"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Buy Now</div>
+                                        <div class="amount">$5,00.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="countdown-area">
+                                <div class="countdown">
+                                    <div id="bid_counter24"></div>
+                                </div>
+                                <span class="total-bids">30 Bids</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#0" class="custom-button">Submit a bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="1500">
+                        <div class="auction-thumb">
+                            <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/jewelry/auction-3.jpg') }}" alt="jewelry"></a>
+                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                        </div>
+                        <div class="auction-content">
+                            <h6 class="title">
+                                <a href="product-details.html">Gold Ring With Clear Stones</a>
+                            </h6>
+                            <div class="bid-area">
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-money"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Buy Now</div>
+                                        <div class="amount">$5,00.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="countdown-area">
+                                <div class="countdown">
+                                    <div id="bid_counter25"></div>
+                                </div>
+                                <span class="total-bids">30 Bids</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#0" class="custom-button">Submit a bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= Jewelry Auction Section Ends Here =============-->
+
+
+    <!--============= Call In Section Starts Here =============-->
+    <section class="call-in-section padding-top pt-max-xl-0">
+        <div class="container">
+            <div class="call-wrapper cl-white bg_img" data-background="{{ asset('frontend/assets/images/call-in/call-bg.png') }}">
+                <div class="section-header" data-aos="zoom-out-down" data-aos-duration="1200">
+                    <h3 class="title">Register for Free & Start Bidding Now!</h3>
+                    <p>From cars to diamonds to iPhones, we have it all.</p>
+                </div>
+                <a href="sign-up.html" class="custom-button white">Register</a>
+            </div>
+        </div>
+    </section>
+    <!--============= Call In Section Ends Here =============-->
+
+
+    <!--============= Watches Auction Section Starts Here =============-->
+    <section class="watches-auction-section padding-bottom padding-top">
+        <div class="container">
+            <div class="section-header-3" data-aos="zoom-out-down" data-aos-duration="1200">
+                <div class="left">
+                    <div class="thumb">
+                        <img src="{{ asset('frontend/assets/images/header-icons/coin-1.png') }}" alt="header-icons">
+                    </div>
+                    <div class="title-area">
+                        <h2 class="title">Watches</h2>
+                        <p>Shop for men & women designer brand watches</p>
+                    </div>
+                </div>
+                <a href="#0" class="normal-button">View All</a>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="1600">
+                        <div class="auction-thumb">
+                            <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/watches/auction-1.jpg') }}" alt="watches"></a>
+                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                        </div>
+                        <div class="auction-content">
+                            <h6 class="title">
+                                <a href="product-details.html">Vintage Rolex</a>
+                            </h6>
+                            <div class="bid-area">
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-money"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Buy Now</div>
+                                        <div class="amount">$5,00.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="countdown-area">
+                                <div class="countdown">
+                                    <div id="bid_counter20"></div>
+                                </div>
+                                <span class="total-bids">30 Bids</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#0" class="custom-button">Submit a bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="1700">
+                        <div class="auction-thumb">
+                            <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/watches/auction-2.jpg') }}" alt="watches"></a>
+                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                        </div>
+                        <div class="auction-content">
+                            <h6 class="title">
+                                <a href="product-details.html">Lady’s Vintage Rolex Datejust</a>
+                            </h6>
+                            <div class="bid-area">
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-money"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Buy Now</div>
+                                        <div class="amount">$5,00.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="countdown-area">
+                                <div class="countdown">
+                                    <div id="bid_counter21"></div>
+                                </div>
+                                <span class="total-bids">30 Bids</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#0" class="custom-button">Submit a bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="1800">
+                        <div class="auction-thumb">
+                            <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/watches/auction-3.jpg') }}" alt="watches"></a>
+                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                        </div>
+                        <div class="auction-content">
+                            <h6 class="title">
+                                <a href="product-details.html">Lady’s Retro Diamond</a>
+                            </h6>
+                            <div class="bid-area">
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-money"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Buy Now</div>
+                                        <div class="amount">$5,00.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="countdown-area">
+                                <div class="countdown">
+                                    <div id="bid_counter22"></div>
+                                </div>
+                                <span class="total-bids">30 Bids</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#0" class="custom-button">Submit a bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= Watches Auction Section Ends Here =============-->
+
+
+    <!--============= Popular Auction Section Starts Here =============-->
+    <section class="popular-auction padding-top pos-rel">
+        <div class="popular-bg bg_img" data-background="{{ asset('frontend/assets/images/auction/popular/popular-bg.png') }}"></div>
+        <div class="container">
+            <div class="section-header cl-white" data-aos="fade-down" data-aos-duration="1000">
+                <span class="cate">Closing Within 24 Hours</span>
+                <h2 class="title" data-aos="fade-down" data-aos-duration="1500">Popular Auctions</h2>
+                <p>Bid and win great deals,Our auction process is simple, efficient, and transparent.</p>
+            </div>
+            <div class="popular-auction-wrapper">
+                <div class="row justify-content-center mb-30-none">
+                    <div class="col-lg-6">
+                        <div class="auction-item-3" data-aos="zoom-out-up" data-aos-duration="1500">
+                            <div class="auction-thumb">
+                                <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/popular/auction-1.jpg') }}" alt="popular"></a>
+                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                            </div>
+                            <div class="auction-content">
+                                <h6 class="title">
+                                    <a href="product-details.html">Apple Macbook Pro Laptop</a>
+                                </h6>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bids-area">
+                                    Total Bids : <span class="total-bids">130 Bids</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="auction-item-3" data-aos="zoom-out-up" data-aos-duration="900">
+                            <div class="auction-thumb">
+                                <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/popular/auction-2.jpg') }}" alt="popular"></a>
+                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                            </div>
+                            <div class="auction-content">
+                                <h6 class="title">
+                                    <a href="product-details.html">Canon EOS Rebel T6I
+                                        Digital Camera</a>
+                                </h6>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bids-area">
+                                    Total Bids : <span class="total-bids">130 Bids</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="auction-item-3" data-aos="zoom-out-up" data-aos-duration="1000">
+                            <div class="auction-thumb">
+                                <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/popular/auction-3.jpg') }}" alt="popular"></a>
+                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                            </div>
+                            <div class="auction-content">
+                                <h6 class="title">
+                                    <a href="product-details.html">14k Gold Geneve Watch,
+                                        24.5g</a>
+                                </h6>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bids-area">
+                                    Total Bids : <span class="total-bids">130 Bids</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="auction-item-3" data-aos="zoom-out-up" data-aos-duration="1200">
+                            <div class="auction-thumb">
+                                <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/popular/auction-4.jpg') }}" alt="popular"></a>
+                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                            </div>
+                            <div class="auction-content">
+                                <h6 class="title">
+                                    <a href="product-details.html">14K White Gold 185.60
+                                        Grams 5.95 Carats</a>
+                                </h6>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bids-area">
+                                    Total Bids : <span class="total-bids">130 Bids</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="auction-item-3" data-aos="zoom-out-up" data-aos-duration="1300">
+                            <div class="auction-thumb">
+                                <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/popular/auction-5.jpg') }}" alt="popular"></a>
+                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                            </div>
+                            <div class="auction-content">
+                                <h6 class="title">
+                                    <a href="product-details.html">2009 Toyota Prius
+                                        (Medford, NY 11763)</a>
+                                </h6>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bids-area">
+                                    Total Bids : <span class="total-bids">130 Bids</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="auction-item-3" data-aos="zoom-out-up" data-aos-duration="1400">
+                            <div class="auction-thumb">
+                                <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/popular/auction-6.jpg') }}" alt="popular"></a>
+                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                            </div>
+                            <div class="auction-content">
+                                <h6 class="title">
+                                    <a href="product-details.html">.6 Gram Pure Gold
+                                        Nugget</a>
+                                </h6>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bids-area">
+                                    Total Bids : <span class="total-bids">130 Bids</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= Popular Auction Section Ends Here =============-->
+
+
+    <!--============= Coins and Bullion Auction Section Starts Here =============-->
+    <section class="coins-and-bullion-auction-section padding-bottom padding-top pos-rel pb-max-xl-0">
+        <div class="jewelry-bg d-none d-xl-block"><img src="{{ asset('frontend/assets/images/auction/coins/coin-bg.png') }}" alt="coin"></div>
+        <div class="container">
+            <div class="section-header-3" data-aos="zoom-out-down" data-aos-duration="1200">
+                <div class="left">
+                    <div class="thumb">
+                        <img src="{{ asset('frontend/assets/images/header-icons/coin-1.png') }}" alt="header-icons">
+                    </div>
+                    <div class="title-area">
+                        <h2 class="title">Coins & Bullion</h2>
+                        <p>Discover rare, foreign, & ancient coins that are worth collecting</p>
+                    </div>
+                </div>
+                <a href="#0" class="normal-button">View All</a>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="1900">
+                        <div class="auction-thumb">
+                            <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/coins/auction-1.jpg') }}" alt="coins"></a>
+                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                        </div>
+                        <div class="auction-content">
+                            <h6 class="title">
+                                <a href="product-details.html">Ancient & World Coins</a>
+                            </h6>
+                            <div class="bid-area">
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-money"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Buy Now</div>
+                                        <div class="amount">$5,00.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="countdown-area">
+                                <div class="countdown">
+                                    <div id="bid_counter17"></div>
+                                </div>
+                                <span class="total-bids">30 Bids</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#0" class="custom-button">Submit a bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="2000">
+                        <div class="auction-thumb">
+                            <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/coins/auction-2.jpg') }}" alt="coins"></a>
+                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                        </div>
+                        <div class="auction-content">
+                            <h6 class="title">
+                                <a href="product-details.html">2018 Hyundai Sonata</a>
+                            </h6>
+                            <div class="bid-area">
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-money"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Buy Now</div>
+                                        <div class="amount">$5,00.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="countdown-area">
+                                <div class="countdown">
+                                    <div id="bid_counter18"></div>
+                                </div>
+                                <span class="total-bids">30 Bids</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#0" class="custom-button">Submit a bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="auction-item-2" data-aos="zoom-out-up" data-aos-duration="2100">
+                        <div class="auction-thumb">
+                            <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/coins/auction-3.jpg') }}" alt="coins"></a>
+                            <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                            <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                        </div>
+                        <div class="auction-content">
+                            <h6 class="title">
+                                <a href="product-details.html">2018 Hyundai Sonata</a>
+                            </h6>
+                            <div class="bid-area">
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-auction"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Current Bid</div>
+                                        <div class="amount">$876.00</div>
+                                    </div>
+                                </div>
+                                <div class="bid-amount">
+                                    <div class="icon">
+                                        <i class="flaticon-money"></i>
+                                    </div>
+                                    <div class="amount-content">
+                                        <div class="current">Buy Now</div>
+                                        <div class="amount">$5,00.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="countdown-area">
+                                <div class="countdown">
+                                    <div id="bid_counter19"></div>
+                                </div>
+                                <span class="total-bids">30 Bids</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#0" class="custom-button">Submit a bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= Coins and Bullion Auction Section Ends Here =============-->
+
+
+    <!--============= Real Estate Section Starts Here =============-->
+    <section class="real-estate-auction padding-top padding-bottom pos-rel oh">
+        <div class="car-bg"><img src="{{ asset('frontend/assets/images/auction/realstate/real-bg.png') }}" alt="realstate"></div>
+        <div class="container">
+            <div class="section-header-3" data-aos="zoom-out-down" data-aos-duration="1200">
+                <div class="left">
+                    <div class="thumb">
+                        <img src="{{ asset('frontend/assets/images/header-icons/coin-1.png') }}" alt="header-icons">
+                    </div>
+                    <div class="title-area">
+                        <h2 class="title">Real Estate</h2>
+                        <p>Find auctions for Homes, Condos, Residential & Commercial Properties.</p>
+                    </div>
+                </div>
+                <a href="#0" class="normal-button">View All</a>
+            </div>
+            <div class="auction-slider-4 owl-theme owl-carousel">
+                <div class="auction-item-4">
+                    <div class="auction-thumb">
+                        <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/realstate/auction-1.png') }}" alt="realstate"></a>
+                        <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                    </div>
+                    <div class="auction-content">
+                        <h4 class="title">
+                            <a href="product-details.html">Brand New Apartments In Esenyurt, Istanbul</a>
+                        </h4>
+                        <div class="bid-area">
+                            <div class="bid-amount">
+                                <div class="icon">
+                                    <i class="flaticon-auction"></i>
+                                </div>
+                                <div class="amount-content">
+                                    <div class="current">Current Bid</div>
+                                    <div class="amount">$876.00</div>
+                                </div>
+                            </div>
+                            <div class="bid-amount">
+                                <div class="icon">
+                                    <i class="flaticon-money"></i>
+                                </div>
+                                <div class="amount-content">
+                                    <div class="current">Buy Now</div>
+                                    <div class="amount">$5,00.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-area">
+                            <div class="countdown">
+                                <div id="bid_counter30"></div>
+                            </div>
+                            <span class="total-bids">30 Bids</span>
+                        </div>
+                        <div class="text-center">
+                            <a href="#0" class="custom-button">Submit a bid</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="auction-item-4">
+                    <div class="auction-thumb">
+                        <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/realstate/auction-1.png') }}" alt="realstate"></a>
+                        <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                    </div>
+                    <div class="auction-content">
+                        <h4 class="title">
+                            <a href="product-details.html">Brand New Apartments In Esenyurt, Istanbul</a>
+                        </h4>
+                        <div class="bid-area">
+                            <div class="bid-amount">
+                                <div class="icon">
+                                    <i class="flaticon-auction"></i>
+                                </div>
+                                <div class="amount-content">
+                                    <div class="current">Current Bid</div>
+                                    <div class="amount">$876.00</div>
+                                </div>
+                            </div>
+                            <div class="bid-amount">
+                                <div class="icon">
+                                    <i class="flaticon-money"></i>
+                                </div>
+                                <div class="amount-content">
+                                    <div class="current">Buy Now</div>
+                                    <div class="amount">$5,00.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-area">
+                            <div class="countdown">
+                                <div id="bid_counter31"></div>
+                            </div>
+                            <span class="total-bids">30 Bids</span>
+                        </div>
+                        <div class="text-center">
+                            <a href="#0" class="custom-button">Submit a bid</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="auction-item-4">
+                    <div class="auction-thumb">
+                        <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/realstate/auction-1.png') }}" alt="realstate"></a>
+                        <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                    </div>
+                    <div class="auction-content">
+                        <h4 class="title">
+                            <a href="product-details.html">Brand New Apartments In Esenyurt, Istanbul</a>
+                        </h4>
+                        <div class="bid-area">
+                            <div class="bid-amount">
+                                <div class="icon">
+                                    <i class="flaticon-auction"></i>
+                                </div>
+                                <div class="amount-content">
+                                    <div class="current">Current Bid</div>
+                                    <div class="amount">$876.00</div>
+                                </div>
+                            </div>
+                            <div class="bid-amount">
+                                <div class="icon">
+                                    <i class="flaticon-money"></i>
+                                </div>
+                                <div class="amount-content">
+                                    <div class="current">Buy Now</div>
+                                    <div class="amount">$5,00.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-area">
+                            <div class="countdown">
+                                <div id="bid_counter32"></div>
+                            </div>
+                            <span class="total-bids">30 Bids</span>
+                        </div>
+                        <div class="text-center">
+                            <a href="#0" class="custom-button">Submit a bid</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="auction-item-4">
+                    <div class="auction-thumb">
+                        <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/realstate/auction-1.png') }}" alt="realstate"></a>
+                        <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                    </div>
+                    <div class="auction-content">
+                        <h4 class="title">
+                            <a href="product-details.html">Brand New Apartments In Esenyurt, Istanbul</a>
+                        </h4>
+                        <div class="bid-area">
+                            <div class="bid-amount">
+                                <div class="icon">
+                                    <i class="flaticon-auction"></i>
+                                </div>
+                                <div class="amount-content">
+                                    <div class="current">Current Bid</div>
+                                    <div class="amount">$876.00</div>
+                                </div>
+                            </div>
+                            <div class="bid-amount">
+                                <div class="icon">
+                                    <i class="flaticon-money"></i>
+                                </div>
+                                <div class="amount-content">
+                                    <div class="current">Buy Now</div>
+                                    <div class="amount">$5,00.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-area">
+                            <div class="countdown">
+                                <div id="bid_counter33"></div>
+                            </div>
+                            <span class="total-bids">30 Bids</span>
+                        </div>
+                        <div class="text-center">
+                            <a href="#0" class="custom-button">Submit a bid</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="auction-item-4">
+                    <div class="auction-thumb">
+                        <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/realstate/auction-1.png') }}" alt="realstate"></a>
+                        <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                    </div>
+                    <div class="auction-content">
+                        <h4 class="title">
+                            <a href="product-details.html">Brand New Apartments In Esenyurt, Istanbul</a>
+                        </h4>
+                        <div class="bid-area">
+                            <div class="bid-amount">
+                                <div class="icon">
+                                    <i class="flaticon-auction"></i>
+                                </div>
+                                <div class="amount-content">
+                                    <div class="current">Current Bid</div>
+                                    <div class="amount">$876.00</div>
+                                </div>
+                            </div>
+                            <div class="bid-amount">
+                                <div class="icon">
+                                    <i class="flaticon-money"></i>
+                                </div>
+                                <div class="amount-content">
+                                    <div class="current">Buy Now</div>
+                                    <div class="amount">$5,00.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="countdown-area">
+                            <div class="countdown">
+                                <div id="bid_counter34"></div>
+                            </div>
+                            <span class="total-bids">30 Bids</span>
+                        </div>
+                        <div class="text-center">
+                            <a href="#0" class="custom-button">Submit a bid</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav real-style ml-auto">
+                <a href="#0" class="real-prev"><i class="flaticon-left-arrow"></i></a>
+                <div class="pagination"></div>
+                <a href="#0" class="real-next active"><i class="flaticon-right-arrow"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--============= Real Estate Section Starts Here =============-->
+
+
+    <!--============= Art Auction Section Starts Here =============-->
+    <section class="art-and-electronics-auction-section padding-top">
+        <div class="container">
+            <div class="row justify-content-center mb--50">
+                <div class="col-xl-6 col-lg-8 mb-50">
+                    <div class="section-header-2">
+                        <div class="left">
+                            <div class="thumb">
+                                <img src="{{ asset('frontend/assets/images/header-icons/camera-1.png') }}" alt="header-icons">
+                            </div>
+                            <h2 class="title">Electronics</h2>
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#0" class="electro-prev"><i class="flaticon-left-arrow"></i></a>
+                            <a href="#0" class="electro-next active"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                    <div class="auction-slider-1 owl-carousel owl-theme  mb-30-none">
+                        <div class="slide-item">
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/electronics/auction-1.jpg') }}" alt="electronics"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">Magnifying Glasses, Jewelry Loupe odit qui corporis</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter1"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/electronics/auction-2.jpg') }}" alt="electronics"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">Surveillance WiFi Exterieur, 1080P Camera</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter2"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/electronics/auction-3.jpg') }}" alt="electronics"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">WiFi Doorbell Camera for Apartments</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter3"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/electronics/auction-4.jpg') }}" alt="electronics"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">GPD Pocket 2 Ultrabook 7" inch</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter4"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/electronics/auction-1.jpg') }}" alt="electronics"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">Magnifying Glasses, Jewelry Loupe odit qui corporis</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter5"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/electronics/auction-2.jpg') }}" alt="electronics"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">Surveillance WiFi Exterieur, 1080P Camera</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter6"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/electronics/auction-3.jpg') }}" alt="electronics"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">WiFi Doorbell Camera for Apartments</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter7"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/electronics/auction-4.jpg') }}" alt="electronics"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">GPD Pocket 2 Ultrabook 7" inch</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter8"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-8 mb-50">
+                    <div class="section-header-2">
+                        <div class="left">
+                            <div class="thumb">
+                                <img src="{{ asset('frontend/assets/images/header-icons/art-1.png') }}" alt="header-icons">
+                            </div>
+                            <h2 class="title">Art</h2>
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#0" class="art-prev"><i class="flaticon-left-arrow"></i></a>
+                            <a href="#0" class="art-next active"><i class="flaticon-right-arrow"></i></a>
+                        </div>
+                    </div>
+                    <div class="auction-slider-2 owl-carousel owl-theme mb-30-none">
+                        <div class="slide-item">
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/art/auction-1.jpg') }}" alt="art"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">Magnifying Glasses, Jewelry Loupe odit qui corporis</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter9"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/art/auction-2.jpg') }}" alt="art"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">Surveillance WiFi Exterieur, 1080P Camera</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter10"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/art/auction-3.jpg') }}" alt="art"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">WiFi Doorbell Camera for Apartments</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter11"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/art/auction-4.jpg') }}" alt="art"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">GPD Pocket 2 Ultrabook 7" inch</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter12"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/art/auction-1.jpg') }}" alt="art"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">Magnifying Glasses, Jewelry Loupe odit qui corporis</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter13"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/art/auction-2.jpg') }}" alt="art"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">Surveillance WiFi Exterieur, 1080P Camera</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter14"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/art/auction-3.jpg') }}" alt="art"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">WiFi Doorbell Camera for Apartments</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter15"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="auction-item-1">
+                                <div class="auction-thumb">
+                                    <a href="product-details.html"><img src="{{ asset('frontend/assets/images/auction/art/auction-4.jpg') }}" alt="art"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="product-details.html">GPD Pocket 2 Ultrabook 7" inch</a>
+                                    </h6>
+                                    <div class="bid-amount">
+                                        <div class="icon">
+                                            <i class="flaticon-auction"></i>
+                                        </div>
+                                        <div class="amount-content">
+                                            <div class="current">Current Bid</div>
+                                            <div class="amount">$876.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="countdown-area">
+                                        <div class="countdown">
+                                            <div id="bid_counter16"></div>
+                                        </div>
+                                        <span class="total-bids">30 Bids</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= Art Auction Section Ends Here =============-->
+
+
+    <!--============= How Section Starts Here =============-->
+    <section class="how-section padding-top">
+        <div class="container">
+            <div class="how-wrapper section-bg">
+                <div class="section-header text-lg-left" data-aos="zoom-out-up" data-aos-duration="1200">
+                    <h2 class="title">How it works</h2>
+                    <p>Easy 3 steps to win</p>
+                </div>
+                <div class="row justify-content-center mb--40">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="how-item">
+                            <div class="how-thumb" data-aos="zoom-out-up" data-aos-duration="1000">
+                                <img src="{{ asset('frontend/assets/images/how/how1.png') }}" alt="how">
+                            </div>
+                            <div class="how-content" data-aos="zoom-out-up" data-aos-duration="1200">
+                                <h4 class="title">Sign Up</h4>
+                                <p>No Credit Card Required</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="how-item">
+                            <div class="how-thumb" data-aos="zoom-out-up" data-aos-duration="1200">
+                                <img src="{{ asset('frontend/assets/images/how/how2.png') }}" alt="how">
+                            </div>
+                            <div class="how-content" data-aos="zoom-out-up" data-aos-duration="1400">
+                                <h4 class="title">Bid</h4>
+                                <p>Bidding is free Only pay if you win</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="how-item">
+                            <div class="how-thumb" data-aos="zoom-out-up" data-aos-duration="1400">
+                                <img src="{{ asset('frontend/assets/images/how/how3.png') }}" alt="how">
+                            </div>
+                            <div class="how-content" data-aos="zoom-out-up" data-aos-duration="1600">
+                                <h4 class="title">Win</h4>
+                                <p>Fun - Excitement - Great deals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= How Section Ends Here =============-->
+
+
+    <!--============= Client Section Starts Here =============-->
+    <section class="client-section padding-top padding-bottom">
+        <div class="container">
+            <div class="section-header" data-aos="zoom-out-down" data-aos-duration="1200">
+                <h2 class="title">Don’t just take our word for it!</h2>
+                <p>Our hard work is paying off. Great reviews from amazing customers.</p>
+            </div>
+            <div class="m--15">
+                <div class="client-slider owl-theme owl-carousel">
+                    <div class="client-item">
+                        <div class="client-content">
+                            <p>I can't stop bidding! It's a great way to spend some time and I want everything on Sbidu.</p>
+                        </div>
+                        <div class="client-author">
+                            <div class="thumb">
+                                <a href="#0">
+                                    <img src="{{ asset('frontend/assets/images/client/client01.png') }}" alt="client">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h6 class="title"><a href="#0">Alexis Moore</a></h6>
+                                <div class="ratings">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-item">
+                        <div class="client-content">
+                            <p>I came I saw I won. Love what I have won, and will try to win something else.</p>
+                        </div>
+                        <div class="client-author">
+                            <div class="thumb">
+                                <a href="#0">
+                                    <img src="{{ asset('frontend/assets/images/client/client02.png') }}" alt="client">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h6 class="title"><a href="#0">Darin Griffin</a></h6>
+                                <div class="ratings">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-item">
+                        <div class="client-content">
+                            <p>This was my first time, but it was exciting. I will try it again. Thank you so much.</p>
+                        </div>
+                        <div class="client-author">
+                            <div class="thumb">
+                                <a href="#0">
+                                    <img src="{{ asset('frontend/assets/images/client/client03.png') }}" alt="client">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h6 class="title"><a href="#0">Tom Powell</a></h6>
+                                <div class="ratings">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= Client Section Ends Here =============-->
+
+
+
 
 
 @endsection

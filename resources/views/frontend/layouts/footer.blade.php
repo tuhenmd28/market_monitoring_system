@@ -1,186 +1,214 @@
- <!--<< Footer Section Start >>-->
- <footer class="footer-section overflow-hidden position-relative footer-style1">
-    <div class="footer-widgets-wrapper footer-widget-wrapperv01">
-        <div class="container">
-            <div class="row g-md-4 g-4 justify-content-between">
-                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="single-footer-widget">
-                        <div class="widget-head">
-                            <a href="index-2.html" class="footer-logo">
-                                <img src="{{ asset('frontend/assets/img/logo/logo-light.png') }}" alt="logo-img">
-                            </a>
-                        </div>
-                        <div class="footer-content">
-                            <p class="pre-pragraph">
-                                Lorem ipsum dolor amet consectetur <br> sell adipis elit phase nibh ellentes
-                            </p>
-                            <div class="social-wrapper social-empact d-flex align-items-center">
-                                <a href="#" class="white-clr"><i class="white-clr fab fa-facebook-f"></i></a>
-                                <a href="#" class="white-clr">
-                                    <svg width="11" height="12" viewBox="0 0 11 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M6.55735 5.16157L10.5183 0.65625H9.57971L6.14039 4.56816L3.39341 0.65625H0.225098L4.37906 6.57174L0.225098 11.2963H1.16378L4.79579 7.16516L7.6968 11.2963H10.8651L6.55712 5.16157H6.55735ZM5.2717 6.62386L4.85082 6.03481L1.502 1.34768H2.94375L5.64629 5.13034L6.06717 5.71939L9.58015 10.6363H8.13839L5.2717 6.62409V6.62386Z"
-                                            fill="white-clr" />
-                                    </svg>
-                                </a>
-                                <a href="#" class="white-clr"><i class="white-clr fa-brands fa-linkedin-in"></i></a>
-                                <a href="#" class="white-clr"><i class="white-clr fa-brands fa-pinterest-p"></i></a>
-                            </div>
-                        </div>
+
+    <!--============= Footer Section Starts Here =============-->
+    <footer class="bg_img padding-top oh" data-background="{{ asset('frontend/assets/images/footer/footer-bg.jpg') }}">
+        <div class="footer-top-shape">
+            <img src="{{ asset('frontend/assets/css/img/footer-top-shape.png') }}" alt="css">
+        </div>
+        <div class="anime-wrapper">
+            <div class="anime-1 plus-anime">
+                <img src="{{ asset('frontend/assets/images/footer/p1.png') }}" alt="footer">
+            </div>
+            <div class="anime-2 plus-anime">
+                <img src="{{ asset('frontend/assets/images/footer/p2.png') }}" alt="footer">
+            </div>
+            <div class="anime-3 plus-anime">
+                <img src="{{ asset('frontend/assets/images/footer/p3.png') }}" alt="footer">
+            </div>
+            <div class="anime-5 zigzag">
+                <img src="{{ asset('frontend/assets/images/footer/c2.png') }}" alt="footer">
+            </div>
+            <div class="anime-6 zigzag">
+                <img src="{{ asset('frontend/assets/images/footer/c3.png') }}" alt="footer">
+            </div>
+            <div class="anime-7 zigzag">
+                <img src="{{ asset('frontend/assets/images/footer/c4.png') }}" alt="footer">
+            </div>
+        </div>
+        <div class="newslater-wrapper">
+            <div class="container">
+                <div class="newslater-area">
+                    <div class="newslater-thumb">
+                        <img src="{{ asset('frontend/assets/images/footer/newslater.png') }}" alt="footer">
                     </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="single-footer-widget">
-                        <div class="widget-head">
-                            <h3 class="white-clr">Service</h3>
+                    <div class="newslater-content">
+                        <div class="section-header left-style mb-low" data-aos="fade-down" data-aos-duration="1100">
+                            <h5 class="cate">Subscribe to Sbidu</h5>
+                            <h3 class="title">To Get Exclusive Benefits</h3>
                         </div>
-                        <ul class="list-area">
-                            <li>
-                                <a href="#">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                    Success Steps Education
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                    Pathway to Progress
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                    Skill Builders Academy
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                    Academic Achievers
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="single-footer-widget">
-                        <div class="widget-head">
-                            <h3 class="white-clr">Link</h3>
-                        </div>
-                        <ul class="list-area">
-                            <li>
-                                <a href="about.html">
-                                    About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="service.html">
-                                    Service
-                                </a>
-                            </li>
-                            <li>
-                                <a href="faq.html">
-                                    FAQ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="blog.html">
-                                    Blog Ang News
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="single-footer-widget">
-                        <div class="widget-head">
-                            <h3 class="white-clr">Contact</h3>
-                        </div>
-                        <ul class="list-area list-contact">
-                            <li>
-                                <a href="#">
-                                    <i class="fa-solid fa-envelope"></i>
-                                    debra.holt@example.com
-                                </a>
-                            </li>
-                            <li>
-                                <a href="info%40example.html" class="link">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    1901 Thornridge Cir. Shiloh, <br> Hawaii 81063
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="link">
-                                    <i class="fa-solid fa-phone"></i>
-                                    (270) 555-0117 <br>
-                                    (270) 555-0118
-                                </a>
-                            </li>
-                        </ul>
+                        <form class="subscribe-form">
+                            <input type="text" placeholder="Enter Your Email" name="email">
+                            <button type="submit" class="custom-button">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div
-                class="footer-wrapper footer-wrapperv01 d-md-flex d-grid gap-md-0 gap-2 align-items-center justify-content-md-between justify-content-center text-md-start text-center">
-                <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                    &copy; theme_ocean 2024. All Rights Reserved
-                </p>
-                <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
-                    <li>
-                        <a href="contact.html">
-                            Trams & Condition
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            Privacy Policy
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            Contact Us
-                        </a>
-                    </li>
-                </ul>
+        <div class="footer-top padding-bottom padding-top">
+            <div class="container">
+                <div class="row mb--60">
+                    <div class="col-sm-6 col-lg-3" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="footer-widget widget-links">
+                            <h5 class="title">Auction Categories</h5>
+                            <ul class="links-list">
+                                <li>
+                                    <a href="#0">Ending Now</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Vehicles</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Watches</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Electronics</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Real Estate</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Jewelry</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Art</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Sports & Outdoor</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3" data-aos="fade-down" data-aos-duration="1300">
+                        <div class="footer-widget widget-links">
+                            <h5 class="title">About Us</h5>
+                            <ul class="links-list">
+                                <li>
+                                    <a href="#0">About Sbidu</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Help</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Affiliates</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Jobs</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Press</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Our blog</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Collectors' portal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3" data-aos="fade-down" data-aos-duration="1600">
+                        <div class="footer-widget widget-links">
+                            <h5 class="title">We're Here to Help</h5>
+                            <ul class="links-list">
+                                <li>
+                                    <a href="#0">Your Account</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Safe and Secure</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Shipping Information</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Help & FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3" data-aos="fade-down" data-aos-duration="1800">
+                        <div class="footer-widget widget-follow">
+                            <h5 class="title">Follow Us</h5>
+                            <ul class="links-list">
+                                <li>
+                                    <a href="#0"><i class="fas fa-phone-alt"></i>(646) 663-4575</a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="fas fa-blender-phone"></i>(646) 968-0608</a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="fas fa-envelope-open-text"></i><span class="__cf_email__" data-cfemail="c8a0ada4b888ada6afa7bca0ada5ade6aba7a5">[email&#160;protected]</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="fas fa-location-arrow"></i>1201 Broadway Suite</a>
+                                </li>
+                            </ul>
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="#0" class="active"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Element -->
-    <img src="{{ asset('frontend/assets/img/footer/footer-wheat.png') }}" alt="img" class="footer-wheat position-absolute">
-    <!-- Element -->
-</footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright-area">
+                    <div class="footer-bottom-wrapper">
+                        <div class="logo">
+                            <a href="index.html"><img src="{{ asset('frontend/assets/images/logo/footer-logo.png') }}" alt="logo"></a>
+                        </div>
+                        <ul class="gateway-area">
+                            <li>
+                                <a href="#0"><img src="{{ asset('frontend/assets/images/footer/paypal.png') }}" alt="footer"></a>
+                            </li>
+                            <li>
+                                <a href="#0"><img src="{{ asset('frontend/assets/images/footer/visa.png') }}" alt="footer"></a>
+                            </li>
+                            <li>
+                                <a href="#0"><img src="{{ asset('frontend/assets/images/footer/discover.png') }}" alt="footer"></a>
+                            </li>
+                            <li>
+                                <a href="#0"><img src="{{ asset('frontend/assets/images/footer/mastercard.png') }}" alt="footer"></a>
+                            </li>
+                        </ul>
+                        <div class="copyright"><p>&copy; Copyright 2024 | <a href="#0">Sbidu</a> By <a href="#0">Uiaxis</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--============= Footer Section Ends Here =============-->
 
 
 
-<!--<< All JS Plugins >>-->
-<script src="{{ asset('frontend/assets/js/jquery-3.7.1.min.js') }}"></script>
-<!--<< Viewport Js >>-->
-<script src="{{ asset('frontend/assets/js/viewport.jquery.js') }}"></script>
-<!--<< Bootstrap Js >>-->
-<script src="{{ asset('frontend/assets/js/bootstrap.bundle.min.js') }}"></script>
-<!--<< Nice Select Js >>-->
-<script src="{{ asset('frontend/assets/js/jquery.nice-select.min.js') }}"></script>
-<!--<< Waypoints Js >>-->
-<script src="{{ asset('frontend/assets/js/jquery.waypoints.js') }}"></script>
-<!--<< Counterup Js >>-->
-<script src="{{ asset('frontend/assets/js/jquery.counterup.min.js') }}"></script>
-<!--<< Swiper Slider Js >>-->
-<script src="{{ asset('frontend/assets/js/swiper-bundle.min.js') }}"></script>
-<!--<< MeanMenu Js >>-->
-<script src="{{ asset('frontend/assets/js/jquery.meanmenu.min.js') }}"></script>
-<!--<< Magnific Popup Js >>-->
-<script src="{{ asset('frontend/assets/js/jquery.magnific-popup.min.js') }}"></script>
-<!--<< Filter Mixtup Js >>-->
-<script src="{{ asset('frontend/assets/js/mixitup.min.js') }}"></script>
-<!--<< Wow Animation Js >>-->
-<script src="{{ asset('frontend/assets/js/wow.min.js') }}"></script>
-<!--<< Main.js >>-->
-<script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+    <script data-cfasync="false" src="{{ asset('frontend/../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js') }}"></script><script src="{{ asset('frontend/assets/js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/modernizr-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/plugins.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/aos.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/wow.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/waypoints.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/nice-select.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/counterup.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/owl.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/yscountdown.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
 </body>
 
 

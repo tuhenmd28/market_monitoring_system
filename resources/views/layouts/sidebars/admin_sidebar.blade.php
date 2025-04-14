@@ -46,7 +46,7 @@
                     <li class="slide">
                         <a class="side-menu__item"  href="{{ route('admin.product_type.index') }}">
                             <i class="fa fa-list sidemenu_icon"></i>
-                            <span class="side-menu__label">Product Type</span>
+                            <span class="side-menu__label">Product Unit</span>
                         </a>
                     </li>
                     <li class="slide ">
@@ -57,6 +57,59 @@
                         <ul class="slide-menu">
                             <li><a href="{{ route('admin.product.create') }}" class="slide-item">Add Product</a></li>
                             <li><a href="{{ route('admin.product.index') }}" class="slide-item">All Product</a></li>
+
+                        </ul>
+                    </li>
+                    @if (auth()->user()->type == 3)
+
+                    @endif
+                    <li class="slide ">
+                        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
+                            <i class="fa fa-group sidemenu_icon"></i>
+                            <span class="side-menu__label">Production Cost</span><i
+                                class="angle fa fa-angle-right"></i></a>
+                        <ul class="slide-menu">
+                            <li><a href="{{ route('admin.product_cost.create') }}" class="slide-item">Add Product Cost</a></li>
+                            <li><a href="{{ route('admin.product_cost.index') }}" class="slide-item">All Product Cost</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="slide ">
+                        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
+                            <i class="fa fa-group sidemenu_icon"></i>
+                            <span class="side-menu__label">Government Storage</span><i
+                                class="angle fa fa-angle-right"></i></a>
+                        <ul class="slide-menu">
+                            <li><a href="{{ route('admin.government_storage.create') }}" class="slide-item">Add Government Storage</a></li>
+                            <li><a href="{{ route('admin.government_storage.index') }}" class="slide-item">All Government Storage</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="slide ">
+                        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
+                            <i class="fa fa-group sidemenu_icon"></i>
+                            <span class="side-menu__label">Purchase Product</span><i
+                                class="angle fa fa-angle-right"></i></a>
+                        <ul class="slide-menu">
+                            <li><a href="{{ route('admin.purchase_product.create') }}" class="slide-item">Purchase Product</a></li>
+                            <li><a href="{{ route('admin.purchase_product.index') }}" class="slide-item">All Purchase Product</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="slide ">
+                        <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
+                            <i class="fa fa-group sidemenu_icon"></i>
+                            <span class="side-menu__label">User</span><i
+                                class="angle fa fa-angle-right"></i></a>
+                        <ul class="slide-menu">
+                            <li><a href="{{ route('admin.users') }}" class="slide-item">All User</a></li>
+                            @php
+                                $userType = \App\Models\User::types;
+                            @endphp
+                            @foreach ($userType as $key=>$item)
+                            <li><a href="{{ route('admin.users',$key) }}" class="slide-item">All {{$item}}</a></li>
+
+                            @endforeach
 
                         </ul>
                     </li>

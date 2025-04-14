@@ -111,9 +111,39 @@
                                 <div class="row">
                                     <div class="col-sm-12 col-md-12">
                                         <div class="form-group">
+                                            <label class="form-label">Parent Category  </label>
+                                            <select name="parent_id" id="" class="form-control select2">
+                                                <option value="">Select Parent Category</option>
+                                                @foreach ($categories as $item)
+                                                    <option {{ isset($category)?($category->parent_id == $item->id ? "selected":""):'' }} value="{{ $item->id }}">{{ $item->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="form-group">
                                             <label class="form-label">Category Name <span class="text-red">*</span></label>
                                             <input type="text" value="{{ isset($category)?$category->name:'' }}" class="form-control" name="name"
                                                 placeholder="Enter Category Name" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Description <span class="text-red">*</span></label>
+                                            <textarea type="text" value="{{ isset($category)?$category->description:'' }}" class="form-control" name="description"
+                                                placeholder="Enter Description" required> {{ isset($category)?$category->description:'' }}</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Product Image (Optional)</label>
+                                            <input type="file" name="image"
+                                            @isset($category)
+
+                                            data-default-file="{{ asset('category')."/".$category->image }}"
+                                            @endisset
+                                             class="dropify" data-height="150">
                                         </div>
                                     </div>
                                     @isset($category)
@@ -161,6 +191,8 @@
                                                     <tr role="row">
                                                         <th class="text-center text-white">SL.</th>
                                                         <th class="text-center text-white">Name</th>
+                                                        <th class="text-center text-white">Description</th>
+                                                        <th class="text-center text-white">Image</th>
                                                         <th class="text-center text-white">Status</th>
 
 
@@ -173,6 +205,11 @@
                                                         <tr>
                                                             <td class="text-center">{{ ++$key }}</td>
                                                             <td>{{ $item->name }}</td>
+                                                            <td>{{ $item->description }}</td>
+                                                            <td>
+                                                                <img src="{{ asset('category/' . $item->image) }}"
+                                                                    alt="{{ $item->name }}" width="50">
+                                                            </td>
                                                             <td>
                                                                 <span class="badge badge-{{$item->status == 1 ? 'success' : 'danger' }}-light">{{ $item->status == 1 ? 'Show' : 'Hide' }}</span>
 
@@ -200,14 +237,7 @@
                                                             </td>
                                                         </tr>
                                                     @empty
-                                                        <tr>
-                                                            {{-- <td colspan="8" align="center"> no data foudn </td> --}}
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
 
-                                                        </tr>
                                                     @endforelse
 
 

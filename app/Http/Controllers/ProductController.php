@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use App\Models\Category;
+use App\Models\ItemImage;
 use App\Models\ProductType;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\File;
 
 class ProductController extends Controller
 {
@@ -15,7 +17,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::with('category','type')->get();
+        $products = Product::with('category','images')->get();
         return view('product.list', compact('products'));
     }
 
@@ -25,8 +27,7 @@ class ProductController extends Controller
     public function create()
     {
         $category = Category::where('status',1)->get();
-        $productType = ProductType::where('status',1)->get();
-        return view('product.add',compact('category','productType'));
+        return view('product.add',compact('category'));
     }
 
     /**
@@ -34,10 +35,11 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->all());
         $this->validate($request, [
             'name' => 'required',
             'category_id' => 'required',
-            'product_type_id' => 'required',
+            'description' => 'required',
             'price' => 'required',
         ]);
         $image_name = "";
@@ -49,10 +51,23 @@ class ProductController extends Controller
         $product = new Product();
         $product->name = $request->name;
         $product->category_id = $request->category_id;
-        $product->product_type_id = $request->product_type_id;
-        $product->price = $request->price;
+        $product->description = $request->description;
+        $product->start_price = $request->price;
+        $product->seller_id = auth()->user()->id;
         $product->image = $image_name;
         $product->save();
+        if ($request->hasFile('multiple')) {
+            foreach ($request->file('multiple') as $img) {
+                $imageName = date('YmdHis') . uniqid() . '.' . $img->getClientOriginalExtension();
+
+                $img->move(public_path('product'), $imageName);
+
+                $itemImage = new ItemImage();
+                $itemImage->item_id = $product->id;
+                $itemImage->image = $imageName;
+                $itemImage->save();
+            }
+        }
         return redirect()->route('admin.product.index')->with('success','Product added successfully');
     }
 
@@ -70,8 +85,21 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $category = Category::where('status',1)->get();
-        $productType = ProductType::where('status',1)->get();
-        return view('product.edit',compact('category','productType','product'));
+        return view('product.edit',compact('category','product'));
+    }
+    public function set_product_auction(Request $request)
+    {
+        $this->validate($request, [
+            'start_time' => 'required',
+            'end_time' => 'required',
+        ]);
+        $product = Product::find($request->id);
+        $product->start_time = $request->start_time;
+        $product->end_time = $request->end_time;
+        $product->status = 'active';
+        $product->save();
+        return redirect()->route('admin.product.index')->with('success','Product auction time set successfully');
+
     }
 
     /**
@@ -82,21 +110,46 @@ class ProductController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'category_id' => 'required',
-            'product_type_id' => 'required',
+            'description' => 'required',
             'price' => 'required',
         ]);
-        $image_name = $product->image;
+        $image_name = "";
         if($request->hasFile('image')){
+            $imagePath = public_path('product/' . $product->image);
+            if (File::exists($imagePath)) {
+                File::delete($imagePath);
+            }
             $image = $request->file('image');
             $image_name = time().'.'.$image->getClientOriginalExtension();
             $image->move(public_path('product'),$image_name);
         }
         $product->name = $request->name;
         $product->category_id = $request->category_id;
-        $product->product_type_id = $request->product_type_id;
-        $product->price = $request->price;
-        $product->image = $image_name;
+        $product->description = $request->description;
+        $product->start_price = $request->price;
+        $product->seller_id = auth()->user()->id;
+        $product->image = $image_name? $image_name : $product->image;
         $product->save();
+        if ($request->hasFile('multiple')) {
+            foreach($product->images as $ima1){
+                $imagePath = public_path('product/' . $ima1->image);
+                if (File::exists($imagePath)) {
+                    File::delete($imagePath);
+                }
+            }
+            ItemImage::where('item_id',$product->id)->delete();
+            foreach ($request->file('multiple') as $img) {
+
+                $imageName = date('YmdHis') . uniqid() . '.' . $img->getClientOriginalExtension();
+
+                $img->move(public_path('product'), $imageName);
+
+                $itemImage = new ItemImage();
+                $itemImage->item_id = $product->id;
+                $itemImage->image = $imageName;
+                $itemImage->save();
+            }
+        }
         return redirect()->route('admin.product.index')->with('success','Product updated successfully');
     }
 

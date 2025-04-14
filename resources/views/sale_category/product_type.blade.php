@@ -77,7 +77,7 @@
             <!--Page header-->
             <div class="page-header d-lg-flex d-block">
                 <div class="page-leftheader">
-                    <div class="page-title"> Product Type</div>
+                    <div class="page-title"> Product Unit</div>
                 </div>
                 <div class="page-rightheader ms-md-auto">
                     <div class=" btn-list">
@@ -106,13 +106,13 @@
                             @endisset
 
                             <div class="card-header border-bottom-0">
-                                <h3 class="card-title"> {{ isset($category) ? 'Edit' : 'Add' }} Product Type </h3>
+                                <h3 class="card-title"> {{ isset($category) ? 'Edit' : 'Add' }} Product Unit </h3>
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-12">
                                         <div class="form-group">
-                                            <label class="form-label">Product Type <span class="text-red">*</span></label>
+                                            <label class="form-label">Product Unit <span class="text-red">*</span></label>
                                             <input type="text" value="{{ isset($category) ? $category->name : '' }}"
                                                 class="form-control" name="name" placeholder="Enter Product Type Name"
                                                 required>
@@ -121,7 +121,7 @@
                                     @isset($category)
                                         <div class="col-sm-12 col-md-12">
                                             <div class="form-group">
-                                                <label class="form-label">Product Type Status </label>
+                                                <label class="form-label">Product Unit Status </label>
                                                 <select name="status" id="" class="form-control select2">
                                                     <option {{ $category->status == 1 ? 'selected' : '' }} value="1">Show
                                                     </option>

@@ -34,16 +34,16 @@
                                         <div class="col-9">
                                             <div class="mt-0 text-start">
                                                 <a href="#">
-                                                    <span class="fs-16 font-weight-semibold">Today Sale</span>
+                                                    <span class="fs-16 font-weight-semibold">Total Farmer</span>
                                                 </a>
-                                                <h3 class="mb-0 mt-1 text-primary fs-25"></h3>
+                                                <h3 class="mb-0 mt-1 text-primary fs-25">5</h3>
                                             </div>
                                         </div>
                                         <div class="col-3">
                                             <div class="icon1  my-auto  float-end">
                                                 {{-- <i
-                                                    class="feather feather-briefcase"></i> --}}
-                                                <img src="{{ asset('assets/sales.png') }}" alt="">
+                                                    class="fa fa-user"></i> --}}
+                                                {{-- <img src="{{ asset('assets/sales.png') }}" alt=""> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -56,15 +56,15 @@
                                     <div class="row">
                                         <div class="col-9">
                                             <div class="mt-0 text-start">
-                                                <span class="fs-16 font-weight-semibold">Monthly Sale</span>
-                                                <h3 class="mb-0 mt-1 text-secondary fs-25"></h3>
+                                                <span class="fs-16 font-weight-semibold">Total Customers</span>
+                                                <h3 class="mb-0 mt-1 text-secondary fs-25">3</h3>
                                             </div>
                                         </div>
                                         <div class="col-3">
                                             <div class="icon1  my-auto  float-end">
                                                 {{-- <i
                                                     class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/sales.png') }}" alt="">
+                                                {{-- <img src="{{ asset('assets/sales.png') }}" alt=""> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -79,22 +79,22 @@
                                         <div class="col-9">
                                             <div class="mt-0 text-start">
                                                 <a href="">
-                                                    <span class="fs-16 font-weight-semibold">Today Production</span>
+                                                    <span class="fs-16 font-weight-semibold">Total Products</span>
                                                 </a>
-                                                <h3 class="mb-0 mt-1 text-secondary fs-25"></h3>
+                                                <h3 class="mb-0 mt-1 text-secondary fs-25">10</h3>
                                             </div>
                                         </div>
                                         <div class="col-3">
                                             <div class="icon1  my-auto  float-end">
                                                 {{-- <i  class="feather feather-info"></i> --}}
-                                                <img src="{{ asset('assets/manufacturing.png') }}" alt="">
+                                                {{-- <img src="{{ asset('assets/manufacturing.png') }}" alt=""> --}}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
 
 
                     </div>

@@ -34,8 +34,22 @@ class CategoryController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
+            'image' => 'required',
+            'description' => 'required',
         ]);
-        $category = Category::create($request->all());
+        $image_name = "";
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $image_name = time().'.'.$image->getClientOriginalExtension();
+            $image->move(public_path('category'),$image_name);
+        }
+        // $category = Category::create($request->all());
+        $category = new Category();
+        $category->name = $request->name;
+        $category->parent_id = $request->parent_id;
+        $category->image = $image_name;
+        $category->description = $request->description;
+        $category->save();
         return redirect()->route('admin.category.index')->with('success', 'Category created successfully');
     }
 
@@ -63,11 +77,28 @@ class CategoryController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
-            'status' => 'required',
+            // 'image' => 'required',
+            'description' => 'required',
         ]);
-        // dd($request->all());
+        $image_name = "";
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $image_name = time().'.'.$image->getClientOriginalExtension();
+            $image->move(public_path('category'),$image_name);
+        }
+        // $category = Category::create($request->all());
+
         $category->name = $request->name;
+        $category->parent_id = $request->parent_id;
+        $category->image = $image_name?$image_name:$category->image;
+        $category->description = $request->description;
         $category->status = $request->status;
+        try {
+            $category->save();
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error', 'Category updated failed');
+        }
+   
 
         $category->save();
         return redirect()->route('admin.category.index')->with('success', 'Category updated successfully');

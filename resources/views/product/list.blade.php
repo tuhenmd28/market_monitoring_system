@@ -118,11 +118,12 @@
                                                             <th class="text-center text-white">SL.</th>
                                                             <th width="20%" class="text-center text-white">Name</th>
                                                             <th class="text-center text-white"> Category</th>
-                                                            <th class="text-center text-white"> Type</th>
+                                                            {{-- <th class="text-center text-white">Images</th> --}}
                                                             <th class="text-center text-white">Price</th>
                                                             <th class="text-center text-white">Image</th>
                                                             <th class="text-center text-white">Date</th>
                                                             <th class="text-center text-white">Status</th>
+                                                            <th class="text-center text-white">Auction</th>
                                                             <th class="text-center text-white"> Action</th>
                                                         </tr>
                                                     </thead>
@@ -136,15 +137,20 @@
                                                                 <td>{{ ++$key }}</td>
                                                                 <td>{{ $item->name }}</td>
                                                                 <td>{{ $item->category?->name }}</td>
-                                                                <td>{{ $item->type?->name }}</td>
+                                                                {{-- <td>{{ $item->type?->name }}</td> --}}
 
-                                                                <td>{{ $item->price }}</td>
+                                                                <td>{{ $item->start_price }}</td>
 
                                                                 <td><img width="150" src="{{ asset('product/'.$item->image) }}" alt=""> </td>
                                                                 <td>{{ $create }} </td>
-                                                                <td>{!! $item->status == 1?'<span class="badge badge-success-light">Show</span>':'<span class="badge badge-danger-light">Hide</span>' !!} </td>
+                                                                <td>{!! '<span class="badge badge-success-light">'.$item->status.'</span>' !!} </td>
+                                                                <td>
 
-
+                                                                    <a class="modal-effect btn btn-primary btn-sm" onclick="SetAuctionTime('{{ $item->id }}')" data-effect="effect-super-scaled" data-bs-toggle="modal" href="#modaldemo8">  Set Auction Time</a>
+                                                                </td>
+                                                                    {{-- <button type="button" class="btn btn-danger btn-sm" onclick="SetAuctionTime('{{ $item->id }}')" >
+                                                                        Set Auction Time
+                                                                    </button> --}}
                                                                 <td>
 
 
@@ -166,20 +172,7 @@
                                                                 </td>
                                                             </tr>
                                                         @empty
-                                                            <tr>
-                                                                {{-- <td colspan="8" align="center"> no data foudn </td> --}}
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                                <td></td>
-                                                            </tr>
+
                                                         @endforelse
 
 
@@ -205,7 +198,33 @@
 
 
     </div>
+    <div class="modal fade"  id="modaldemo8" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered text-center" role="document">
+            <div class="modal-content modal-content-demo">
+                <form action="{{ route('admin.set_product_auction') }}" method="post" enctype="multipart/form-data">
+                <div class="modal-header">
+                    <h6 class="modal-title">Message Preview</h6><button aria-label="Close" class="btn-close" data-bs-dismiss="modal" ><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                        @csrf
+                        <input type="hidden" name="id" id="product_id" value="">
+                        <div class="form-group">
+                        <label class="form-label text-start h5">Set Start Time <span class="text-red">*</span></label>
+                            <input type="text" class="form-control" name="start_time" id="datetimepicker" placeholder="Select Date and Time">
+                        </div>
+                        <div class="form-group">
+                        <label class="form-label text-start h5">Set End Time <span class="text-red">*</span></label>
+                            <input type="text" class="form-control" id="endTime" name="end_time" placeholder="Select Date and Time">
+                        </div>
 
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" >Save </button> <button type="button" class="btn btn-light" data-bs-dismiss="modal" >Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @push('scripts')
@@ -222,7 +241,52 @@
     <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.colVis.min.js"></script>
     {{-- {!! $dataTable->scripts() !!} --}}
 
+    <!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+{{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
+
+
+<script>
+    $(document).ready(function(){
+  $("#datetimepicker").flatpickr({
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+    time_24hr: true,
+    defaultDate: new Date()
+  });
+  $("#endTime").flatpickr({
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+    time_24hr: true,
+    defaultDate: new Date()
+  });
+});
+
+    function SetAuctionTime(id) {
+        // alert(id);
+        $('#product_id').val(id);
+        // $.ajax({
+        //     type: "GET",
+        //     url: "",
+        //     data: {
+        //         id: id
+        //     },
+        //     success: function (response) {
+        //         if (response.status == 200) {
+        //             toastr.success(response.message);
+        //             setTimeout(() => {
+        //                 location.reload();
+        //             }, 1000);
+        //         } else {
+        //             toastr.error(response.message);
+        //         }
+        //     }
+        // });
+    }
+</script>
 
 
 @endpush
